@@ -1,0 +1,686 @@
+[
+  {
+    "id": "alfred",
+    "name": "Alfred the Great",
+    "reign": "871–899",
+    "house": "Wessex",
+    "highlights": [
+      "Defended Wessex against the Danes",
+      "Promoted learning and law codes",
+      "Often called the first king of a united English people"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Alfred_the_Great%2C_silver_penny%3B_struck_875%E2%80%93880_%28obverse%29.png/640px-Alfred_the_Great%2C_silver_penny%3B_struck_875%E2%80%93880_%28obverse%29.png"
+  },
+  {
+    "id": "edward-elder",
+    "name": "Edward the Elder",
+    "reign": "899–924",
+    "house": "Wessex",
+    "highlights": [
+      "Son of Alfred the Great",
+      "Expanded West Saxon control into the Danelaw",
+      "Father of Athelstan"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Edward_the_Elder_-_MS_Royal_14_B_VI.jpg/640px-Edward_the_Elder_-_MS_Royal_14_B_VI.jpg"
+  },
+  {
+    "id": "athelstan",
+    "name": "Athelstan",
+    "reign": "924–939",
+    "house": "Wessex",
+    "highlights": [
+      "First king to rule all of England",
+      "Victory at Brunanburh (937)",
+      "Strong continental alliances"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Athelstan_%28cropped%29.jpg/640px-Athelstan_%28cropped%29.jpg"
+  },
+  {
+    "id": "edmund-i",
+    "name": "Edmund I",
+    "reign": "939–946",
+    "house": "Wessex",
+    "highlights": [
+      "Reconquered the northern Danelaw",
+      "Murdered at Pucklechurch",
+      "Nicknamed Edmund the Magnificent"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Edmund_I_-_MS_Royal_14_B_VI.jpg/640px-Edmund_I_-_MS_Royal_14_B_VI.jpg"
+  },
+  {
+    "id": "eadred",
+    "name": "Eadred",
+    "reign": "946–955",
+    "house": "Wessex",
+    "highlights": [
+      "Brought Northumbria under lasting English control",
+      "Brother of Edmund I",
+      "Left a wealthy treasury"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Eadred_-_MS_Royal_14_B_VI.jpg/640px-Eadred_-_MS_Royal_14_B_VI.jpg"
+  },
+  {
+    "id": "eadwig",
+    "name": "Eadwig",
+    "reign": "955–959",
+    "house": "Wessex",
+    "highlights": [
+      "Short, contested reign",
+      "Kingdom briefly split with his brother Edgar",
+      "Also called Edwy"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Eadwig_-_MS_Royal_14_B_VI.jpg/640px-Eadwig_-_MS_Royal_14_B_VI.jpg"
+  },
+  {
+    "id": "edgar",
+    "name": "Edgar",
+    "reign": "959–975",
+    "house": "Wessex",
+    "highlights": [
+      "Nicknamed Edgar the Peaceful",
+      "Reform of monasteries under Dunstan",
+      "Landmark coronation at Bath"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Edgar_-_MS_Royal_14_B_VI.jpg/640px-Edgar_-_MS_Royal_14_B_VI.jpg"
+  },
+  {
+    "id": "edward-martyr",
+    "name": "Edward the Martyr",
+    "reign": "975–978",
+    "house": "Wessex",
+    "highlights": [
+      "Became king as a teenager",
+      "Murdered at Corfe",
+      "Later venerated as a saint"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Edward_the_Martyr_-_MS_Royal_14_B_VI.jpg/640px-Edward_the_Martyr_-_MS_Royal_14_B_VI.jpg"
+  },
+  {
+    "id": "ethelred",
+    "name": "Ethelred the Unready",
+    "reign": "978–1013; 1014–1016",
+    "house": "Wessex",
+    "highlights": [
+      "Unready means poorly advised",
+      "Paid Danegeld to Viking attackers",
+      "Father of Edward the Confessor"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Ethelred_the_Unready.jpg/640px-Ethelred_the_Unready.jpg"
+  },
+  {
+    "id": "sweyn",
+    "name": "Sweyn Forkbeard",
+    "reign": "1013–1014",
+    "house": "Denmark",
+    "highlights": [
+      "Danish conqueror of England",
+      "Father of Cnut",
+      "Died weeks after taking the throne"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Sweyn_Forkbeard.jpg"
+  },
+  {
+    "id": "edmund-ironside",
+    "name": "Edmund Ironside",
+    "reign": "1016",
+    "house": "Wessex",
+    "highlights": [
+      "Fought Cnut to a hard-fought stalemate",
+      "Reigned only months",
+      "Agreement left Cnut as successor"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Edmund_Ironside_-_MS_Royal_14_B_VI.jpg/640px-Edmund_Ironside_-_MS_Royal_14_B_VI.jpg"
+  },
+  {
+    "id": "cnut",
+    "name": "Cnut",
+    "reign": "1016–1035",
+    "house": "Denmark",
+    "highlights": [
+      "Ruled a North Sea empire",
+      "England, Denmark, and later Norway",
+      "Famous tide legend is later folklore"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Canute_and_%C3%86lfgifu_cropped_%28Canute%29.jpg"
+  },
+  {
+    "id": "harold-harefoot",
+    "name": "Harold Harefoot",
+    "reign": "1035–1040",
+    "house": "Denmark",
+    "highlights": [
+      "Son of Cnut",
+      "Took England while Harthacnut was abroad",
+      "Short, disputed succession"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Harold_Harefoot_in_the_Cambridge_University_Library.jpg/640px-Harold_Harefoot_in_the_Cambridge_University_Library.jpg"
+  },
+  {
+    "id": "harthacnut",
+    "name": "Harthacnut",
+    "reign": "1040–1042",
+    "house": "Denmark",
+    "highlights": [
+      "Last Danish king of England",
+      "Also king of Denmark",
+      "Death opened the way for Edward the Confessor"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Harthacnut_-_MS_Royal_14_B_VI.jpg/640px-Harthacnut_-_MS_Royal_14_B_VI.jpg"
+  },
+  {
+    "id": "edward-confessor",
+    "name": "Edward the Confessor",
+    "reign": "1042–1066",
+    "house": "Wessex",
+    "highlights": [
+      "Last king of the House of Wessex",
+      "Began Westminster Abbey",
+      "Childless death triggered the 1066 crisis"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bayeux_Tapestry_scene1_EDWARD_REX.jpg/640px-Bayeux_Tapestry_scene1_EDWARD_REX.jpg"
+  },
+  {
+    "id": "harold-ii",
+    "name": "Harold II (Godwinson)",
+    "reign": "1066",
+    "house": "Godwin",
+    "highlights": [
+      "Won at Stamford Bridge",
+      "Defeated and killed at Hastings",
+      "Last Anglo-Saxon king of England"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bayeux_tapestry_stitches_detail..jpg/640px-Bayeux_tapestry_stitches_detail..jpg"
+  },
+  {
+    "id": "william-i",
+    "name": "William I (the Conqueror)",
+    "reign": "1066–1087",
+    "house": "Normandy",
+    "highlights": [
+      "Won the Battle of Hastings",
+      "Commissioned the Domesday Book",
+      "Began Norman rule in England"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/William_the_Conqueror_%28TFA%29.jpg/640px-William_the_Conqueror_%28TFA%29.jpg"
+  },
+  {
+    "id": "william-ii",
+    "name": "William II (Rufus)",
+    "reign": "1087–1100",
+    "house": "Normandy",
+    "highlights": [
+      "Son of the Conqueror",
+      "Killed in a New Forest hunting accident",
+      "Clashed often with the Church"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/William_II_of_England_Historia_Anglorum.png/640px-William_II_of_England_Historia_Anglorum.png"
+  },
+  {
+    "id": "henry-i",
+    "name": "Henry I",
+    "reign": "1100–1135",
+    "house": "Normandy",
+    "highlights": [
+      "Issued the Charter of Liberties",
+      "White Ship crisis killed his heir",
+      "Named daughter Matilda as heir"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Worcester_chronicle_-_Henry_I_in_a_hulk.png/640px-Worcester_chronicle_-_Henry_I_in_a_hulk.png"
+  },
+  {
+    "id": "stephen",
+    "name": "Stephen",
+    "reign": "1135–1154",
+    "house": "Blois",
+    "highlights": [
+      "Civil war with Empress Matilda (the Anarchy)",
+      "Nephew of Henry I",
+      "Settled succession on Henry II"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/StephenatLincoln.jpg"
+  },
+  {
+    "id": "henry-ii",
+    "name": "Henry II",
+    "reign": "1154–1189",
+    "house": "Plantagenet",
+    "highlights": [
+      "Founded the Plantagenet line",
+      "Becket controversy and murder",
+      "Ruled a vast Angevin empire"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Henry_II_Illumination.jpg/640px-Henry_II_Illumination.jpg"
+  },
+  {
+    "id": "richard-i",
+    "name": "Richard I (the Lionheart)",
+    "reign": "1189–1199",
+    "house": "Plantagenet",
+    "highlights": [
+      "Spent little time in England",
+      "Leader on the Third Crusade",
+      "Ransomed after capture in Austria"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Church_of_Fontevraud_Abbey_Richard_I_effigy.jpg/640px-Church_of_Fontevraud_Abbey_Richard_I_effigy.jpg"
+  },
+  {
+    "id": "john",
+    "name": "John",
+    "reign": "1199–1216",
+    "house": "Plantagenet",
+    "highlights": [
+      "Sealed Magna Carta (1215)",
+      "Lost Normandy to France",
+      "Nicknamed Lackland"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Jan_tomb.jpg"
+  },
+  {
+    "id": "henry-iii",
+    "name": "Henry III",
+    "reign": "1216–1272",
+    "house": "Plantagenet",
+    "highlights": [
+      "Long minority and long reign",
+      "Rebuilt Westminster Abbey",
+      "Faced baronial reform under Simon de Montfort"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/HenryIII.jpg"
+  },
+  {
+    "id": "edward-i",
+    "name": "Edward I",
+    "reign": "1272–1307",
+    "house": "Plantagenet",
+    "highlights": [
+      "Conquered Wales",
+      "Fought Scotland (Longshanks)",
+      "Model Parliament developments"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Edward_I_-_Westminster_Abbey_Sedilia.jpg/640px-Edward_I_-_Westminster_Abbey_Sedilia.jpg"
+  },
+  {
+    "id": "edward-ii",
+    "name": "Edward II",
+    "reign": "1307–1327",
+    "house": "Plantagenet",
+    "highlights": [
+      "Defeat at Bannockburn (1314)",
+      "Overthrown by Isabella and Mortimer",
+      "Deposed in favour of Edward III"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cathedral_Church_of_St_Peter_and_the_Holy_and_Indivisible_Trinity%2C_Monument_to_Edward_II_of_England_Gloucester_1245952_20230819_0030.jpg/640px-Cathedral_Church_of_St_Peter_and_the_Holy_and_Indivisible_Trinity%2C_Monument_to_Edward_II_of_England_Gloucester_1245952_20230819_0030.jpg"
+  },
+  {
+    "id": "edward-iii",
+    "name": "Edward III",
+    "reign": "1327–1377",
+    "house": "Plantagenet",
+    "highlights": [
+      "Started the Hundred Years War",
+      "Order of the Garter founded",
+      "Black Death struck during his reign"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Edward_III_of_England_%28Order_of_the_Garter%29.jpg/640px-Edward_III_of_England_%28Order_of_the_Garter%29.jpg"
+  },
+  {
+    "id": "richard-ii",
+    "name": "Richard II",
+    "reign": "1377–1399",
+    "house": "Plantagenet",
+    "highlights": [
+      "Became king as a child",
+      "Faced the Peasants Revolt (1381)",
+      "Deposed by Henry Bolingbroke"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Westminster_Portrait_of_Richard_II_of_England_%281390s%29.jpg/640px-The_Westminster_Portrait_of_Richard_II_of_England_%281390s%29.jpg"
+  },
+  {
+    "id": "henry-iv",
+    "name": "Henry IV",
+    "reign": "1399–1413",
+    "house": "Lancaster",
+    "highlights": [
+      "First Lancastrian king",
+      "Seized the crown from Richard II",
+      "Faced repeated rebellions"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Illumination_of_Henry_IV_%28cropped%29.jpg/640px-Illumination_of_Henry_IV_%28cropped%29.jpg"
+  },
+  {
+    "id": "henry-v",
+    "name": "Henry V",
+    "reign": "1413–1422",
+    "house": "Lancaster",
+    "highlights": [
+      "Victory at Agincourt (1415)",
+      "Nearly won the French crown",
+      "Died young on campaign"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Henry_V_Miniature.jpg/640px-Henry_V_Miniature.jpg"
+  },
+  {
+    "id": "henry-vi",
+    "name": "Henry VI",
+    "reign": "1422–1461; 1470–1471",
+    "house": "Lancaster",
+    "highlights": [
+      "King in infancy",
+      "Wars of the Roses erupted",
+      "Twice deposed by the Yorkists"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Henry_VI_of_England%2C_Shrewsbury_book.jpg/640px-Henry_VI_of_England%2C_Shrewsbury_book.jpg"
+  },
+  {
+    "id": "edward-iv",
+    "name": "Edward IV",
+    "reign": "1461–1470; 1471–1483",
+    "house": "York",
+    "highlights": [
+      "Yorkist victor of Towton",
+      "Briefly exiled then restored",
+      "Father of the Princes in the Tower"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Edward_IV_Plantagenet.jpg/640px-Edward_IV_Plantagenet.jpg"
+  },
+  {
+    "id": "edward-v",
+    "name": "Edward V",
+    "reign": "1483",
+    "house": "York",
+    "highlights": [
+      "One of the Princes in the Tower",
+      "Never crowned",
+      "Disappeared after uncle Richard took power"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/King-edward-v.jpg"
+  },
+  {
+    "id": "richard-iii",
+    "name": "Richard III",
+    "reign": "1483–1485",
+    "house": "York",
+    "highlights": [
+      "Last Yorkist king",
+      "Died at Bosworth Field",
+      "Remains rediscovered in Leicester (2012)"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Richard_III_Portrait.png/640px-Richard_III_Portrait.png"
+  },
+  {
+    "id": "henry-vii",
+    "name": "Henry VII",
+    "reign": "1485–1509",
+    "house": "Tudor",
+    "highlights": [
+      "Won Bosworth; founded the Tudors",
+      "Stabilised finances",
+      "Married Elizabeth of York"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Enrique_VII_de_Inglaterra%2C_por_un_artista_an%C3%B3nimo.jpg"
+  },
+  {
+    "id": "henry-viii",
+    "name": "Henry VIII",
+    "reign": "1509–1547",
+    "house": "Tudor",
+    "highlights": [
+      "Six marriages",
+      "English Reformation and break with Rome",
+      "Dissolution of the monasteries"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/After_Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg/640px-After_Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "edward-vi",
+    "name": "Edward VI",
+    "reign": "1547–1553",
+    "house": "Tudor",
+    "highlights": [
+      "Protestant boy-king",
+      "Book of Common Prayer advanced",
+      "Died at 15"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Circle_of_William_Scrots_Edward_VI_of_England.jpg/640px-Circle_of_William_Scrots_Edward_VI_of_England.jpg"
+  },
+  {
+    "id": "mary-i",
+    "name": "Mary I",
+    "reign": "1553–1558",
+    "house": "Tudor",
+    "highlights": [
+      "First queen regnant of England",
+      "Restored Catholicism",
+      "Nicknamed Bloody Mary"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Maria_Tudor1.jpg/640px-Maria_Tudor1.jpg"
+  },
+  {
+    "id": "elizabeth-i",
+    "name": "Elizabeth I",
+    "reign": "1558–1603",
+    "house": "Tudor",
+    "highlights": [
+      "Spanish Armada defeated (1588)",
+      "Elizabethan religious settlement",
+      "Last Tudor monarch"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Darnley_stage_3.jpg/640px-Darnley_stage_3.jpg"
+  },
+  {
+    "id": "james-i",
+    "name": "James I",
+    "reign": "1603–1625",
+    "house": "Stuart",
+    "highlights": [
+      "First to rule England and Scotland",
+      "King James Bible (1611)",
+      "Gunpowder Plot (1605)"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/JamesIEngland.jpg/640px-JamesIEngland.jpg"
+  },
+  {
+    "id": "charles-i",
+    "name": "Charles I",
+    "reign": "1625–1649",
+    "house": "Stuart",
+    "highlights": [
+      "Personal rule without Parliament",
+      "English Civil War",
+      "Executed after trial (1649)"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/King_Charles_I_after_original_by_van_Dyck.jpg/640px-King_Charles_I_after_original_by_van_Dyck.jpg"
+  },
+  {
+    "id": "charles-ii",
+    "name": "Charles II",
+    "reign": "1660–1685",
+    "house": "Stuart",
+    "highlights": [
+      "Restoration of the monarchy",
+      "Great Plague and Great Fire of London",
+      "Merry Monarch era"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/King_Charles_II_by_John_Michael_Wright_or_studio.jpg/640px-King_Charles_II_by_John_Michael_Wright_or_studio.jpg"
+  },
+  {
+    "id": "james-ii",
+    "name": "James II",
+    "reign": "1685–1688",
+    "house": "Stuart",
+    "highlights": [
+      "Catholic king in a Protestant realm",
+      "Deposed in the Glorious Revolution",
+      "Fled to France"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/James_II_by_Peter_Lely.jpg/640px-James_II_by_Peter_Lely.jpg"
+  },
+  {
+    "id": "william-mary",
+    "name": "William III & Mary II",
+    "reign": "1689–1702",
+    "house": "Stuart / Orange",
+    "highlights": [
+      "Joint monarchy after 1688",
+      "Bill of Rights (1689)",
+      "Mary died 1694; William ruled alone after"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/King_William_III_of_England%2C_%281650-1702%29.jpg/640px-King_William_III_of_England%2C_%281650-1702%29.jpg"
+  },
+  {
+    "id": "anne",
+    "name": "Anne",
+    "reign": "1702–1714",
+    "house": "Stuart",
+    "highlights": [
+      "Acts of Union (1707) created Great Britain",
+      "Last Stuart monarch",
+      "War of the Spanish Succession"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Dahl%2C_Michael_-_Queen_Anne_-_NPG_6187.jpg/640px-Dahl%2C_Michael_-_Queen_Anne_-_NPG_6187.jpg"
+  },
+  {
+    "id": "george-i",
+    "name": "George I",
+    "reign": "1714–1727",
+    "house": "Hanover",
+    "highlights": [
+      "First Hanoverian king",
+      "Spoke little English",
+      "Rise of Walpole and cabinet government"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/King_George_I_by_Sir_Godfrey_Kneller%2C_Bt_%283%29.jpg/640px-King_George_I_by_Sir_Godfrey_Kneller%2C_Bt_%283%29.jpg"
+  },
+  {
+    "id": "george-ii",
+    "name": "George II",
+    "reign": "1727–1760",
+    "house": "Hanover",
+    "highlights": [
+      "Last British king to lead troops in battle",
+      "Jacobite rising of 1745",
+      "Growing parliamentary power"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/George_II_by_Thomas_Hudson.jpg/640px-George_II_by_Thomas_Hudson.jpg"
+  },
+  {
+    "id": "george-iii",
+    "name": "George III",
+    "reign": "1760–1820",
+    "house": "Hanover",
+    "highlights": [
+      "American Revolutionary War",
+      "Long reign with later illness",
+      "United Kingdom formed (1801)"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Allan_Ramsay_-_King_George_III_in_coronation_robes_-_Google_Art_Project.jpg/640px-Allan_Ramsay_-_King_George_III_in_coronation_robes_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "george-iv",
+    "name": "George IV",
+    "reign": "1820–1830",
+    "house": "Hanover",
+    "highlights": [
+      "Former Prince Regent",
+      "Lavish builder and patron",
+      "Unpopular marriage to Caroline"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/King_George_IV_of_the_United_Kingdom_in_Coronation_Robes_%28by_Thomas_Lawrence%29_-_Royal_Collection_%28RCIN_405918%29.jpg/640px-King_George_IV_of_the_United_Kingdom_in_Coronation_Robes_%28by_Thomas_Lawrence%29_-_Royal_Collection_%28RCIN_405918%29.jpg"
+  },
+  {
+    "id": "william-iv",
+    "name": "William IV",
+    "reign": "1830–1837",
+    "house": "Hanover",
+    "highlights": [
+      "Sailor King",
+      "Reform Act 1832",
+      "Last Hanoverian king of Britain"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/William_IV_in_1833_by_Shee_cropped.jpg/640px-William_IV_in_1833_by_Shee_cropped.jpg"
+  },
+  {
+    "id": "victoria",
+    "name": "Victoria",
+    "reign": "1837–1901",
+    "house": "Hanover / Saxe-Coburg",
+    "highlights": [
+      "Longest reign until Elizabeth II",
+      "Victorian age of empire and industry",
+      "Empress of India from 1876"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Queen_Victoria_by_Bassano.jpg/640px-Queen_Victoria_by_Bassano.jpg"
+  },
+  {
+    "id": "edward-vii",
+    "name": "Edward VII",
+    "reign": "1901–1910",
+    "house": "Saxe-Coburg and Gotha",
+    "highlights": [
+      "Edwardian era",
+      "Modernised the monarchy public style",
+      "Entente diplomacy with France"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/King-Edward-VII_%28cropped%29_%28b%29.jpg/640px-King-Edward-VII_%28cropped%29_%28b%29.jpg"
+  },
+  {
+    "id": "george-v",
+    "name": "George V",
+    "reign": "1910–1936",
+    "house": "Windsor",
+    "highlights": [
+      "Renamed the dynasty Windsor (1917)",
+      "World War I",
+      "Steered the crown through a new media age"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/King_George_1923_LCCN2014715558_%28cropped%29.jpg/640px-King_George_1923_LCCN2014715558_%28cropped%29.jpg"
+  },
+  {
+    "id": "edward-viii",
+    "name": "Edward VIII",
+    "reign": "1936",
+    "house": "Windsor",
+    "highlights": [
+      "Abdicated to marry Wallis Simpson",
+      "Never crowned",
+      "Became Duke of Windsor"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/HRH_The_Prince_of_Wales_No_4_%28HS85-10-36416%29.jpg/640px-HRH_The_Prince_of_Wales_No_4_%28HS85-10-36416%29.jpg"
+  },
+  {
+    "id": "george-vi",
+    "name": "George VI",
+    "reign": "1936–1952",
+    "house": "Windsor",
+    "highlights": [
+      "King through World War II",
+      "Symbol of wartime resolve",
+      "Father of Elizabeth II"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/King_George_VI_LOC_matpc.14736_A_%28cropped%29.jpg/640px-King_George_VI_LOC_matpc.14736_A_%28cropped%29.jpg"
+  },
+  {
+    "id": "elizabeth-ii",
+    "name": "Elizabeth II",
+    "reign": "1952–2022",
+    "house": "Windsor",
+    "highlights": [
+      "Longest-reigning British monarch",
+      "Modernised a global Commonwealth role",
+      "Platinum Jubilee in 2022"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Queen_Elizabeth_II_official_portrait_for_1959_tour_%28retouched%29_%28cropped%29_%283-to-4_aspect_ratio%29.jpg/640px-Queen_Elizabeth_II_official_portrait_for_1959_tour_%28retouched%29_%28cropped%29_%283-to-4_aspect_ratio%29.jpg"
+  },
+  {
+    "id": "charles-iii",
+    "name": "Charles III",
+    "reign": "2022–",
+    "house": "Windsor",
+    "highlights": [
+      "Oldest person to accede",
+      "Formerly Prince of Wales",
+      "Current king of the United Kingdom"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/King_Charles_III_%28July_2023%29.jpg/640px-King_Charles_III_%28July_2023%29.jpg"
+  }
+]
