@@ -1,10 +1,11 @@
 import { geoMercator, geoPath } from 'd3-geo'
 import { useEffect, useMemo, useState } from 'react'
 import { feature } from 'topojson-client'
-import type { Feature, FeatureCollection, Geometry } from 'geojson'
+import type { FeatureCollection, Geometry, MultiPoint } from 'geojson'
 import type { FlagCard } from '../types'
 
 const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
+const ANTARCTICA_ID = '010'
 
 type RegionMapProps = {
   card: FlagCard
@@ -13,154 +14,103 @@ type RegionMapProps = {
 }
 
 /** Tight subregion frames: [[west, south], [east, north]] */
-const SUBREGION_FRAMES: Record<
-  string,
-  { bounds: [[number, number], [number, number]] }
-> = {
-  'North America': {
-    bounds: [
-      [-130, 24],
-      [-52, 60],
-    ],
-  },
-  'Central America': {
-    bounds: [
-      [-93, 6],
-      [-76, 19],
-    ],
-  },
-  Caribbean: {
-    bounds: [
-      [-86, 10],
-      [-59, 28],
-    ],
-  },
-  'South America': {
-    bounds: [
-      [-82, -56],
-      [-34, 13],
-    ],
-  },
-  'Western Europe': {
-    bounds: [
-      [-11, 36],
-      [15, 60],
-    ],
-  },
-  'Northern Europe': {
-    bounds: [
-      [-25, 54],
-      [32, 72],
-    ],
-  },
-  'Southern Europe': {
-    bounds: [
-      [-10, 35],
-      [30, 47],
-    ],
-  },
-  'Central Europe': {
-    bounds: [
-      [5, 45],
-      [25, 56],
-    ],
-  },
-  'Eastern Europe': {
-    bounds: [
-      [20, 44],
-      [45, 62],
-    ],
-  },
-  'Southeast Europe': {
-    bounds: [
-      [13, 34],
-      [30, 49],
-    ],
-  },
-  'Western Asia': {
-    bounds: [
-      [26, 12],
-      [63, 43],
-    ],
-  },
-  'Central Asia': {
-    bounds: [
-      [46, 35],
-      [88, 56],
-    ],
-  },
-  'Eastern Asia': {
-    bounds: [
-      [105, 20],
-      [148, 52],
-    ],
-  },
-  'Southern Asia': {
-    bounds: [
-      [60, 5],
-      [98, 38],
-    ],
-  },
-  'South-Eastern Asia': {
-    bounds: [
-      [92, -11],
-      [141, 23],
-    ],
-  },
-  'Northern Africa': {
-    bounds: [
-      [-18, 15],
-      [38, 38],
-    ],
-  },
-  'Western Africa': {
-    bounds: [
-      [-18, 3],
-      [16, 28],
-    ],
-  },
-  'Middle Africa': {
-    bounds: [
-      [8, -14],
-      [35, 12],
-    ],
-  },
-  'Eastern Africa': {
-    bounds: [
-      [28, -27],
-      [52, 18],
-    ],
-  },
-  'Southern Africa': {
-    bounds: [
-      [10, -36],
-      [41, -15],
-    ],
-  },
-  'Australia and New Zealand': {
-    bounds: [
-      [112, -48],
-      [180, -10],
-    ],
-  },
-  Melanesia: {
-    bounds: [
-      [140, -23],
-      [180, 0],
-    ],
-  },
-  Micronesia: {
-    bounds: [
-      [130, -1],
-      [175, 22],
-    ],
-  },
-  Polynesia: {
-    bounds: [
-      [-175, -25],
-      [-135, -5],
-    ],
-  },
+const SUBREGION_FRAMES: Record<string, [[number, number], [number, number]]> = {
+  'North America': [
+    [-130, 24],
+    [-52, 60],
+  ],
+  'Central America': [
+    [-93, 6],
+    [-76, 19],
+  ],
+  Caribbean: [
+    [-86, 10],
+    [-59, 28],
+  ],
+  'South America': [
+    [-82, -56],
+    [-34, 13],
+  ],
+  'Western Europe': [
+    [-11, 36],
+    [15, 60],
+  ],
+  'Northern Europe': [
+    [-25, 54],
+    [32, 72],
+  ],
+  'Southern Europe': [
+    [-10, 35],
+    [30, 47],
+  ],
+  'Central Europe': [
+    [5, 45],
+    [25, 56],
+  ],
+  'Eastern Europe': [
+    [20, 44],
+    [45, 62],
+  ],
+  'Southeast Europe': [
+    [13, 34],
+    [30, 49],
+  ],
+  'Western Asia': [
+    [26, 12],
+    [63, 43],
+  ],
+  'Central Asia': [
+    [46, 35],
+    [88, 56],
+  ],
+  'Eastern Asia': [
+    [105, 20],
+    [148, 52],
+  ],
+  'Southern Asia': [
+    [60, 5],
+    [98, 38],
+  ],
+  'South-Eastern Asia': [
+    [92, -11],
+    [141, 23],
+  ],
+  'Northern Africa': [
+    [-18, 15],
+    [38, 38],
+  ],
+  'Western Africa': [
+    [-18, 3],
+    [16, 28],
+  ],
+  'Middle Africa': [
+    [8, -14],
+    [35, 12],
+  ],
+  'Eastern Africa': [
+    [28, -27],
+    [52, 18],
+  ],
+  'Southern Africa': [
+    [10, -36],
+    [41, -15],
+  ],
+  'Australia and New Zealand': [
+    [112, -48],
+    [180, -10],
+  ],
+  Melanesia: [
+    [140, -23],
+    [180, 0],
+  ],
+  Micronesia: [
+    [130, -1],
+    [175, 22],
+  ],
+  Polynesia: [
+    [-175, -25],
+    [-135, -5],
+  ],
 }
 
 function padId(id: string | number | undefined): string {
@@ -168,25 +118,18 @@ function padId(id: string | number | undefined): string {
   return String(id).padStart(3, '0')
 }
 
-function frameFeature(
+function boundsAsMultiPoint(
   bounds: [[number, number], [number, number]],
-): Feature<Geometry> {
+): MultiPoint {
   const [[west, south], [east, north]] = bounds
   return {
-    type: 'Feature',
-    properties: {},
-    geometry: {
-      type: 'Polygon',
-      coordinates: [
-        [
-          [west, south],
-          [east, south],
-          [east, north],
-          [west, north],
-          [west, south],
-        ],
-      ],
-    },
+    type: 'MultiPoint',
+    coordinates: [
+      [west, south],
+      [east, south],
+      [east, north],
+      [west, north],
+    ],
   }
 }
 
@@ -222,10 +165,7 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
     cachedCollection,
   )
   const [failed, setFailed] = useState(false)
-  const frame =
-    SUBREGION_FRAMES[card.subregion] ??
-    SUBREGION_FRAMES[card.region] ??
-    null
+  const bounds = SUBREGION_FRAMES[card.subregion] ?? null
 
   useEffect(() => {
     let alive = true
@@ -242,15 +182,16 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
   }, [])
 
   const paths = useMemo(() => {
-    if (!world || !frame) return null
+    if (!world || !bounds) return null
 
     const projection = geoMercator()
+    // MultiPoint fit is reliable; Polygon fit was leaving default world scale.
     projection.fitExtent(
       [
-        [4, 4],
-        [width - 4, height - 4],
+        [6, 6],
+        [width - 6, height - 6],
       ],
-      frameFeature(frame.bounds),
+      boundsAsMultiPoint(bounds),
     )
     projection.clipExtent([
       [0, 0],
@@ -262,8 +203,22 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
     return world.features
       .map((f) => {
         const id = padId(f.id as string | number)
+        if (id === ANTARCTICA_ID) return null
         const d = path(f)
         if (!d) return null
+
+        // Drop shapes whose centroid falls well outside the frame.
+        const centroid = path.centroid(f)
+        if (
+          !Number.isFinite(centroid[0]) ||
+          centroid[0] < -20 ||
+          centroid[0] > width + 20 ||
+          centroid[1] < -20 ||
+          centroid[1] > height + 20
+        ) {
+          return null
+        }
+
         return {
           id,
           d,
@@ -271,9 +226,9 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
         }
       })
       .filter(Boolean) as { id: string; d: string; active: boolean }[]
-  }, [world, card.ccn3, frame, width, height])
+  }, [world, card.ccn3, bounds, width, height])
 
-  if (!frame) {
+  if (!bounds) {
     return null
   }
 
@@ -291,6 +246,7 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
       viewBox={`0 0 ${width} ${height}`}
       role="img"
       aria-label={`${card.subregion} map highlighting ${card.name}`}
+      data-subregion={card.subregion}
     >
       <rect
         x="0"
