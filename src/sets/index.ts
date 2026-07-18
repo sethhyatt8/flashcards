@@ -6,7 +6,8 @@ export const flashcardSets: FlashcardSet[] = [
   {
     id: 'world-flags',
     title: 'World Flags',
-    description: 'Flag on the front. Country, capital, population, and region map on the back.',
+    description:
+      'Flag on the front. Country, capital, population, and a close subregion map on the back.',
     kind: 'flag-fact',
     cards: worldFlags as FlagCard[],
   },

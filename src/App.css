@@ -354,7 +354,7 @@
 .region-map.is-empty {
   display: grid;
   place-items: center;
-  min-height: 140px;
+  min-height: 120px;
   color: var(--ink-soft);
   font-size: 0.9rem;
 }
@@ -372,7 +372,7 @@
 .region-map-land.is-active {
   fill: var(--teal);
   stroke: #0a4f4c;
-  stroke-width: 0.7;
+  stroke-width: 0.8;
 }
 
 .country {

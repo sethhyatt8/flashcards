@@ -6,66 +6,159 @@ import type { FlagCard } from '../types'
 
 const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
 
-type MapRegionId =
-  | 'north-america'
-  | 'south-america'
-  | 'europe'
-  | 'asia'
-  | 'africa'
-  | 'oceania'
-
 type RegionMapProps = {
   card: FlagCard
   width?: number
   height?: number
 }
 
-/** Fixed continental frames — [[west, south], [east, north]] in degrees. */
-const REGION_FRAMES: Record<
-  MapRegionId,
-  { label: string; bounds: [[number, number], [number, number]] }
+/** Tight subregion frames: [[west, south], [east, north]] */
+const SUBREGION_FRAMES: Record<
+  string,
+  { bounds: [[number, number], [number, number]] }
 > = {
-  'north-america': {
-    label: 'North America',
+  'North America': {
     bounds: [
-      [-170, 5],
-      [-50, 72],
+      [-130, 24],
+      [-52, 60],
     ],
   },
-  'south-america': {
-    label: 'South America',
+  'Central America': {
     bounds: [
-      [-85, -56],
-      [-32, 14],
+      [-93, 6],
+      [-76, 19],
     ],
   },
-  europe: {
-    label: 'Europe',
+  Caribbean: {
     bounds: [
-      [-25, 34],
-      [42, 72],
+      [-86, 10],
+      [-59, 28],
     ],
   },
-  asia: {
-    label: 'Asia',
+  'South America': {
     bounds: [
-      [25, -12],
-      [150, 55],
+      [-82, -56],
+      [-34, 13],
     ],
   },
-  africa: {
-    label: 'Africa',
+  'Western Europe': {
     bounds: [
-      [-20, -36],
-      [53, 38],
+      [-11, 36],
+      [15, 60],
     ],
   },
-  oceania: {
-    label: 'Oceania',
-    // Australia, New Zealand, and nearby Pacific
+  'Northern Europe': {
     bounds: [
-      [110, -48],
-      [180, 2],
+      [-25, 54],
+      [32, 72],
+    ],
+  },
+  'Southern Europe': {
+    bounds: [
+      [-10, 35],
+      [30, 47],
+    ],
+  },
+  'Central Europe': {
+    bounds: [
+      [5, 45],
+      [25, 56],
+    ],
+  },
+  'Eastern Europe': {
+    bounds: [
+      [20, 44],
+      [45, 62],
+    ],
+  },
+  'Southeast Europe': {
+    bounds: [
+      [13, 34],
+      [30, 49],
+    ],
+  },
+  'Western Asia': {
+    bounds: [
+      [26, 12],
+      [63, 43],
+    ],
+  },
+  'Central Asia': {
+    bounds: [
+      [46, 35],
+      [88, 56],
+    ],
+  },
+  'Eastern Asia': {
+    bounds: [
+      [105, 20],
+      [148, 52],
+    ],
+  },
+  'Southern Asia': {
+    bounds: [
+      [60, 5],
+      [98, 38],
+    ],
+  },
+  'South-Eastern Asia': {
+    bounds: [
+      [92, -11],
+      [141, 23],
+    ],
+  },
+  'Northern Africa': {
+    bounds: [
+      [-18, 15],
+      [38, 38],
+    ],
+  },
+  'Western Africa': {
+    bounds: [
+      [-18, 3],
+      [16, 28],
+    ],
+  },
+  'Middle Africa': {
+    bounds: [
+      [8, -14],
+      [35, 12],
+    ],
+  },
+  'Eastern Africa': {
+    bounds: [
+      [28, -27],
+      [52, 18],
+    ],
+  },
+  'Southern Africa': {
+    bounds: [
+      [10, -36],
+      [41, -15],
+    ],
+  },
+  'Australia and New Zealand': {
+    bounds: [
+      [112, -48],
+      [180, -10],
+    ],
+  },
+  Melanesia: {
+    bounds: [
+      [140, -23],
+      [180, 0],
+    ],
+  },
+  Micronesia: {
+    bounds: [
+      [130, -1],
+      [175, 22],
+    ],
+  },
+  Polynesia: {
+    bounds: [
+      [-175, -25],
+      [-135, -5],
     ],
   },
 }
@@ -73,18 +166,6 @@ const REGION_FRAMES: Record<
 function padId(id: string | number | undefined): string {
   if (id === undefined || id === null) return ''
   return String(id).padStart(3, '0')
-}
-
-function mapRegionFor(card: FlagCard): MapRegionId {
-  if (card.region === 'Europe') return 'europe'
-  if (card.region === 'Asia') return 'asia'
-  if (card.region === 'Africa') return 'africa'
-  if (card.region === 'Oceania') return 'oceania'
-  if (card.region === 'Americas') {
-    if (card.subregion === 'South America') return 'south-america'
-    return 'north-america'
-  }
-  return 'europe'
 }
 
 function frameFeature(
@@ -136,13 +217,15 @@ function loadWorld(): Promise<FeatureCollection<Geometry>> {
   return loadPromise
 }
 
-export function RegionMap({ card, width = 320, height = 180 }: RegionMapProps) {
+export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
   const [world, setWorld] = useState<FeatureCollection<Geometry> | null>(
     cachedCollection,
   )
   const [failed, setFailed] = useState(false)
-  const mapRegion = mapRegionFor(card)
-  const frame = REGION_FRAMES[mapRegion]
+  const frame =
+    SUBREGION_FRAMES[card.subregion] ??
+    SUBREGION_FRAMES[card.region] ??
+    null
 
   useEffect(() => {
     let alive = true
@@ -159,7 +242,7 @@ export function RegionMap({ card, width = 320, height = 180 }: RegionMapProps) {
   }, [])
 
   const paths = useMemo(() => {
-    if (!world) return null
+    if (!world || !frame) return null
 
     const projection = geoMercator()
     projection.fitExtent(
@@ -190,6 +273,10 @@ export function RegionMap({ card, width = 320, height = 180 }: RegionMapProps) {
       .filter(Boolean) as { id: string; d: string; active: boolean }[]
   }, [world, card.ccn3, frame, width, height])
 
+  if (!frame) {
+    return null
+  }
+
   if (failed) {
     return <div className="region-map is-empty">Map unavailable</div>
   }
@@ -203,7 +290,7 @@ export function RegionMap({ card, width = 320, height = 180 }: RegionMapProps) {
       className="region-map"
       viewBox={`0 0 ${width} ${height}`}
       role="img"
-      aria-label={`${frame.label} map highlighting ${card.name}`}
+      aria-label={`${card.subregion} map highlighting ${card.name}`}
     >
       <rect
         x="0"
