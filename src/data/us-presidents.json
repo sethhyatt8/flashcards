@@ -1,0 +1,587 @@
+[
+  {
+    "id": "washington",
+    "name": "George Washington",
+    "terms": "1789–1797",
+    "vicePresidents": "John Adams",
+    "party": "Unaffiliated",
+    "highlights": [
+      "First U.S. president",
+      "Set many early precedents for the office",
+      "Led the Continental Army in the Revolution"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/640px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
+  },
+  {
+    "id": "adams",
+    "name": "John Adams",
+    "terms": "1797–1801",
+    "vicePresidents": "Thomas Jefferson",
+    "party": "Federalist",
+    "highlights": [
+      "First vice president, then second president",
+      "Signed the Alien and Sedition Acts",
+      "Father of John Quincy Adams"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/John_Adams_Portrait.jpg/640px-John_Adams_Portrait.jpg"
+  },
+  {
+    "id": "jefferson",
+    "name": "Thomas Jefferson",
+    "terms": "1801–1809",
+    "vicePresidents": "Aaron Burr; George Clinton",
+    "party": "Democratic-Republican",
+    "highlights": [
+      "Author of the Declaration of Independence",
+      "Louisiana Purchase (1803)",
+      "Founded the University of Virginia"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg/640px-Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg"
+  },
+  {
+    "id": "madison",
+    "name": "James Madison",
+    "terms": "1809–1817",
+    "vicePresidents": "George Clinton; Elbridge Gerry",
+    "party": "Democratic-Republican",
+    "highlights": [
+      "“Father of the Constitution”",
+      "President during the War of 1812",
+      "Co-author of The Federalist Papers"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/James_Madison.jpg/640px-James_Madison.jpg"
+  },
+  {
+    "id": "monroe",
+    "name": "James Monroe",
+    "terms": "1817–1825",
+    "vicePresidents": "Daniel D. Tompkins",
+    "party": "Democratic-Republican",
+    "highlights": [
+      "Era of Good Feelings",
+      "Monroe Doctrine (1823)",
+      "Missouri Compromise signed during his term"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/James_Monroe_White_House_portrait_1819_%28cropped%29%282%29.jpg/640px-James_Monroe_White_House_portrait_1819_%28cropped%29%282%29.jpg"
+  },
+  {
+    "id": "jq-adams",
+    "name": "John Quincy Adams",
+    "terms": "1825–1829",
+    "vicePresidents": "John C. Calhoun",
+    "party": "Democratic-Republican",
+    "highlights": [
+      "Son of John Adams",
+      "Won via House contingent election",
+      "Later fought slavery in Congress"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/JQA_Photo_Crop_%28cropped%29.jpg/640px-JQA_Photo_Crop_%28cropped%29.jpg"
+  },
+  {
+    "id": "jackson",
+    "name": "Andrew Jackson",
+    "terms": "1829–1837",
+    "vicePresidents": "John C. Calhoun; Martin Van Buren",
+    "party": "Democratic",
+    "highlights": [
+      "“Old Hickory”",
+      "Fought the Bank of the United States",
+      "Indian Removal Act era"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Andrew_jackson_head_%28cropped%29.jpg/640px-Andrew_jackson_head_%28cropped%29.jpg"
+  },
+  {
+    "id": "van-buren",
+    "name": "Martin Van Buren",
+    "terms": "1837–1841",
+    "vicePresidents": "Richard Mentor Johnson",
+    "party": "Democratic",
+    "highlights": [
+      "First president born a U.S. citizen",
+      "Panic of 1837 dominated his term",
+      "Key organizer of the Democratic Party"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Martin_Van_Buren_by_Mathew_Brady_c1855-58-%284%29.jpg/640px-Martin_Van_Buren_by_Mathew_Brady_c1855-58-%284%29.jpg"
+  },
+  {
+    "id": "harrison",
+    "name": "William Henry Harrison",
+    "terms": "1841",
+    "vicePresidents": "John Tyler",
+    "party": "Whig",
+    "highlights": [
+      "Shortest presidency (31 days)",
+      "Died of illness after inauguration",
+      "“Tippecanoe and Tyler Too”"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/William_Henry_Harrison_crop.jpg/640px-William_Henry_Harrison_crop.jpg"
+  },
+  {
+    "id": "tyler",
+    "name": "John Tyler",
+    "terms": "1841–1845",
+    "vicePresidents": "None",
+    "party": "Whig (expelled)",
+    "highlights": [
+      "First VP to succeed on a president’s death",
+      "Annexation of Texas advanced",
+      "Often at odds with Whig leaders"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Tyler%2C_John%2C_by_Healy_%281842%2C_NPG_2019_13%29_%28cropped%29.jpg/640px-Tyler%2C_John%2C_by_Healy_%281842%2C_NPG_2019_13%29_%28cropped%29.jpg"
+  },
+  {
+    "id": "polk",
+    "name": "James K. Polk",
+    "terms": "1845–1849",
+    "vicePresidents": "George M. Dallas",
+    "party": "Democratic",
+    "highlights": [
+      "Mexican–American War",
+      "Oregon boundary settlement",
+      "Achieved an ambitious one-term agenda"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Polk_crop.jpg/640px-Polk_crop.jpg"
+  },
+  {
+    "id": "taylor",
+    "name": "Zachary Taylor",
+    "terms": "1849–1850",
+    "vicePresidents": "Millard Fillmore",
+    "party": "Whig",
+    "highlights": [
+      "Mexican War hero (“Old Rough and Ready”)",
+      "Died in office after 16 months",
+      "Opposed some Compromise of 1850 terms"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Zachary_Taylor_restored_and_cropped_%283.5x4.5_cropped%29_%282%29.jpg/640px-Zachary_Taylor_restored_and_cropped_%283.5x4.5_cropped%29_%282%29.jpg"
+  },
+  {
+    "id": "fillmore",
+    "name": "Millard Fillmore",
+    "terms": "1850–1853",
+    "vicePresidents": "None",
+    "party": "Whig",
+    "highlights": [
+      "Signed the Compromise of 1850",
+      "Included the Fugitive Slave Act",
+      "Last Whig president"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Millard_Fillmore_Better_Crop_%28cropped%29.jpg/640px-Millard_Fillmore_Better_Crop_%28cropped%29.jpg"
+  },
+  {
+    "id": "pierce",
+    "name": "Franklin Pierce",
+    "terms": "1853–1857",
+    "vicePresidents": "William R. King",
+    "party": "Democratic",
+    "highlights": [
+      "Kansas–Nebraska Act turmoil",
+      "Gadsden Purchase",
+      "Deeply unpopular by term’s end"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Mathew_Brady_-_Franklin_Pierce_-_alternate_crop_%28cropped%29%282%29.jpg/640px-Mathew_Brady_-_Franklin_Pierce_-_alternate_crop_%28cropped%29%282%29.jpg"
+  },
+  {
+    "id": "buchanan",
+    "name": "James Buchanan",
+    "terms": "1857–1861",
+    "vicePresidents": "John C. Breckinridge",
+    "party": "Democratic",
+    "highlights": [
+      "President as secession crisis grew",
+      "Dred Scott decision era",
+      "Often ranked among least effective"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/James_Buchanan.jpg/640px-James_Buchanan.jpg"
+  },
+  {
+    "id": "lincoln",
+    "name": "Abraham Lincoln",
+    "terms": "1861–1865",
+    "vicePresidents": "Hannibal Hamlin; Andrew Johnson",
+    "party": "Republican",
+    "highlights": [
+      "Preserved the Union in the Civil War",
+      "Emancipation Proclamation",
+      "Assassinated by John Wilkes Booth"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg/640px-Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg"
+  },
+  {
+    "id": "johnson",
+    "name": "Andrew Johnson",
+    "terms": "1865–1869",
+    "vicePresidents": "None",
+    "party": "National Union / Democratic",
+    "highlights": [
+      "Succeeded Lincoln after assassination",
+      "First president impeached",
+      "Clashed with Radical Republicans"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg/640px-Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg"
+  },
+  {
+    "id": "grant",
+    "name": "Ulysses S. Grant",
+    "terms": "1869–1877",
+    "vicePresidents": "Schuyler Colfax; Henry Wilson",
+    "party": "Republican",
+    "highlights": [
+      "Union general in the Civil War",
+      "Enforced Reconstruction early on",
+      "Administration hit by scandals"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ulysses_S._Grant_1870-1880_%28cropped%29.jpg/640px-Ulysses_S._Grant_1870-1880_%28cropped%29.jpg"
+  },
+  {
+    "id": "hayes",
+    "name": "Rutherford B. Hayes",
+    "terms": "1877–1881",
+    "vicePresidents": "William A. Wheeler",
+    "party": "Republican",
+    "highlights": [
+      "Won after contested 1876 election",
+      "Ended Reconstruction",
+      "Civil service reform advocate"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/President_Rutherford_Hayes_1870_-_1880_Restored.jpg/640px-President_Rutherford_Hayes_1870_-_1880_Restored.jpg"
+  },
+  {
+    "id": "garfield",
+    "name": "James A. Garfield",
+    "terms": "1881",
+    "vicePresidents": "Chester A. Arthur",
+    "party": "Republican",
+    "highlights": [
+      "Assassinated months into office",
+      "Fought patronage appointments",
+      "Second president killed in office"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/James_Abram_Garfield%2C_photo_portrait_seated.jpg/640px-James_Abram_Garfield%2C_photo_portrait_seated.jpg"
+  },
+  {
+    "id": "arthur",
+    "name": "Chester A. Arthur",
+    "terms": "1881–1885",
+    "vicePresidents": "None",
+    "party": "Republican",
+    "highlights": [
+      "Signed the Pendleton Civil Service Act",
+      "Modernized the Navy",
+      "Surprised reformers by backing reform"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chester_A._Arthur_by_Abraham_Bogardus_%28cropped%29_%282%29.jpg/640px-Chester_A._Arthur_by_Abraham_Bogardus_%28cropped%29_%282%29.jpg"
+  },
+  {
+    "id": "cleveland",
+    "name": "Grover Cleveland",
+    "terms": "1885–1889; 1893–1897",
+    "vicePresidents": "Thomas A. Hendricks; Adlai Stevenson I",
+    "party": "Democratic",
+    "highlights": [
+      "Only president with two non-consecutive terms (until Trump)",
+      "Vetoed many bills",
+      "Panic of 1893 in second term"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/StephenGroverCleveland.jpg/640px-StephenGroverCleveland.jpg"
+  },
+  {
+    "id": "b-harrison",
+    "name": "Benjamin Harrison",
+    "terms": "1889–1893",
+    "vicePresidents": "Levi P. Morton",
+    "party": "Republican",
+    "highlights": [
+      "Grandson of William Henry Harrison",
+      "Sherman Antitrust Act",
+      "McKinley Tariff era"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pach_Brothers_-_Benjamin_Harrison_%28cropped%29_%28cropped%29.jpg/640px-Pach_Brothers_-_Benjamin_Harrison_%28cropped%29_%28cropped%29.jpg"
+  },
+  {
+    "id": "mckinley",
+    "name": "William McKinley",
+    "terms": "1897–1901",
+    "vicePresidents": "Garret Hobart; Theodore Roosevelt",
+    "party": "Republican",
+    "highlights": [
+      "Spanish–American War",
+      "Assassinated in 1901",
+      "High protective tariffs"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/McKinley_%28cropped%29.jpg/640px-McKinley_%28cropped%29.jpg"
+  },
+  {
+    "id": "t-roosevelt",
+    "name": "Theodore Roosevelt",
+    "terms": "1901–1909",
+    "vicePresidents": "Charles W. Fairbanks",
+    "party": "Republican",
+    "highlights": [
+      "Youngest person to become president",
+      "Square Deal and trust-busting",
+      "Panama Canal diplomacy"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Theodore_Roosevelt_by_the_Pach_Bros_%284x5_cropped%29_%282%29.jpg/640px-Theodore_Roosevelt_by_the_Pach_Bros_%284x5_cropped%29_%282%29.jpg"
+  },
+  {
+    "id": "taft",
+    "name": "William Howard Taft",
+    "terms": "1909–1913",
+    "vicePresidents": "James S. Sherman",
+    "party": "Republican",
+    "highlights": [
+      "Later Chief Justice of the U.S.",
+      "Dollar Diplomacy",
+      "Heavier antitrust record than often remembered"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/William_Howard_Taft_by_Pach_Brothers_%283x4_ropped%29_%28cropped%29.jpg/640px-William_Howard_Taft_by_Pach_Brothers_%283x4_ropped%29_%28cropped%29.jpg"
+  },
+  {
+    "id": "wilson",
+    "name": "Woodrow Wilson",
+    "terms": "1913–1921",
+    "vicePresidents": "Thomas R. Marshall",
+    "party": "Democratic",
+    "highlights": [
+      "World War I leadership",
+      "Fourteen Points / League of Nations",
+      "Federal Reserve created (1913)"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/President_Woodrow_Wilson_Harris_%26_Ewing_%283x4_cropped_b%29.jpg/640px-President_Woodrow_Wilson_Harris_%26_Ewing_%283x4_cropped_b%29.jpg"
+  },
+  {
+    "id": "harding",
+    "name": "Warren G. Harding",
+    "terms": "1921–1923",
+    "vicePresidents": "Calvin Coolidge",
+    "party": "Republican",
+    "highlights": [
+      "“Return to normalcy”",
+      "Teapot Dome scandal aftermath",
+      "Died in office in 1923"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Warren_G._Harding_1920s_portrait_%283x4_cropped%29_%28cropped%29.jpg/640px-Warren_G._Harding_1920s_portrait_%283x4_cropped%29_%28cropped%29.jpg"
+  },
+  {
+    "id": "coolidge",
+    "name": "Calvin Coolidge",
+    "terms": "1923–1929",
+    "vicePresidents": "Charles G. Dawes",
+    "party": "Republican",
+    "highlights": [
+      "“Silent Cal”",
+      "Pro-business 1920s prosperity",
+      "Succeeded Harding after his death"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/President_Calvin_Coolidge%2C_1924_portrait_photograph_%283x4_cropped_2%29.jpeg/640px-President_Calvin_Coolidge%2C_1924_portrait_photograph_%283x4_cropped_2%29.jpeg"
+  },
+  {
+    "id": "hoover",
+    "name": "Herbert Hoover",
+    "terms": "1929–1933",
+    "vicePresidents": "Charles Curtis",
+    "party": "Republican",
+    "highlights": [
+      "Stock market crash of 1929",
+      "Early Great Depression years",
+      "Former humanitarian and Commerce Secretary"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/President_Hoover_portrait.jpg/640px-President_Hoover_portrait.jpg"
+  },
+  {
+    "id": "fdr",
+    "name": "Franklin D. Roosevelt",
+    "terms": "1933–1945",
+    "vicePresidents": "John Nance Garner; Henry A. Wallace; Harry S. Truman",
+    "party": "Democratic",
+    "highlights": [
+      "New Deal programs",
+      "World War II leadership",
+      "Only president elected four times"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg/640px-FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg"
+  },
+  {
+    "id": "truman",
+    "name": "Harry S. Truman",
+    "terms": "1945–1953",
+    "vicePresidents": "Alben W. Barkley",
+    "party": "Democratic",
+    "highlights": [
+      "Ordered atomic bombs on Japan",
+      "Marshall Plan and early Cold War",
+      "“The buck stops here”"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/TRUMAN_58-766-06_%28cropped%29.jpg/640px-TRUMAN_58-766-06_%28cropped%29.jpg"
+  },
+  {
+    "id": "eisenhower",
+    "name": "Dwight D. Eisenhower",
+    "terms": "1953–1961",
+    "vicePresidents": "Richard Nixon",
+    "party": "Republican",
+    "highlights": [
+      "Supreme Allied Commander in WWII",
+      "Interstate Highway System",
+      "Warned of the “military-industrial complex”"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959_%28cropped%29%283%29.jpg/640px-Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959_%28cropped%29%283%29.jpg"
+  },
+  {
+    "id": "kennedy",
+    "name": "John F. Kennedy",
+    "terms": "1961–1963",
+    "vicePresidents": "Lyndon B. Johnson",
+    "party": "Democratic",
+    "highlights": [
+      "Cuban Missile Crisis",
+      "Space race / Moon goal",
+      "Assassinated in Dallas"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/640px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg"
+  },
+  {
+    "id": "lbj",
+    "name": "Lyndon B. Johnson",
+    "terms": "1963–1969",
+    "vicePresidents": "Hubert Humphrey",
+    "party": "Democratic",
+    "highlights": [
+      "Great Society programs",
+      "Civil Rights Act of 1964",
+      "Vietnam War escalation"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Lyndon_B._Johnson%2C_photo_portrait%2C_color_%283x4_cropped%29%282%29.jpg/960px-Lyndon_B._Johnson%2C_photo_portrait%2C_color_%283x4_cropped%29%282%29.jpg"
+  },
+  {
+    "id": "nixon",
+    "name": "Richard Nixon",
+    "terms": "1969–1974",
+    "vicePresidents": "Spiro Agnew; Gerald Ford",
+    "party": "Republican",
+    "highlights": [
+      "Opened relations with China",
+      "Watergate scandal",
+      "Only president to resign"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Richard_Nixon_presidential_portrait_%282%29.jpg/960px-Richard_Nixon_presidential_portrait_%282%29.jpg"
+  },
+  {
+    "id": "ford",
+    "name": "Gerald Ford",
+    "terms": "1974–1977",
+    "vicePresidents": "Nelson Rockefeller",
+    "party": "Republican",
+    "highlights": [
+      "Only president never elected president or VP",
+      "Pardoned Nixon",
+      "Succeeded after Nixon’s resignation"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Gerald_Ford_presidential_portrait_%28cropped%29.jpg/640px-Gerald_Ford_presidential_portrait_%28cropped%29.jpg"
+  },
+  {
+    "id": "carter",
+    "name": "Jimmy Carter",
+    "terms": "1977–1981",
+    "vicePresidents": "Walter Mondale",
+    "party": "Democratic",
+    "highlights": [
+      "Camp David Accords",
+      "Iran hostage crisis",
+      "Later Nobel Peace Prize for post-presidency work"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg/960px-Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg"
+  },
+  {
+    "id": "reagan",
+    "name": "Ronald Reagan",
+    "terms": "1981–1989",
+    "vicePresidents": "George H. W. Bush",
+    "party": "Republican",
+    "highlights": [
+      "Conservative realignment of the 1980s",
+      "Survived an assassination attempt",
+      "Cold War endgame rhetoric"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Portrait_of_President_Reagan_1981.jpg/640px-Official_Portrait_of_President_Reagan_1981.jpg"
+  },
+  {
+    "id": "hw-bush",
+    "name": "George H. W. Bush",
+    "terms": "1989–1993",
+    "vicePresidents": "Dan Quayle",
+    "party": "Republican",
+    "highlights": [
+      "Gulf War (1991)",
+      "Fall of the Soviet Union era",
+      "“Read my lips” tax pledge fallout"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/George_H._W._Bush_presidential_portrait_%28cropped%29_%282%29.jpg/640px-George_H._W._Bush_presidential_portrait_%28cropped%29_%282%29.jpg"
+  },
+  {
+    "id": "clinton",
+    "name": "Bill Clinton",
+    "terms": "1993–2001",
+    "vicePresidents": "Al Gore",
+    "party": "Democratic",
+    "highlights": [
+      "1990s economic boom",
+      "Impeached over perjury/obstruction",
+      "NAFTA signed"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Bill_Clinton_%28cropped_4%29.jpg/640px-Bill_Clinton_%28cropped_4%29.jpg"
+  },
+  {
+    "id": "w-bush",
+    "name": "George W. Bush",
+    "terms": "2001–2009",
+    "vicePresidents": "Dick Cheney",
+    "party": "Republican",
+    "highlights": [
+      "September 11 attacks response",
+      "Wars in Afghanistan and Iraq",
+      "Son of George H. W. Bush"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/George-W-Bush_%28cropped_2%29.jpeg/640px-George-W-Bush_%28cropped_2%29.jpeg"
+  },
+  {
+    "id": "obama",
+    "name": "Barack Obama",
+    "terms": "2009–2017",
+    "vicePresidents": "Joe Biden",
+    "party": "Democratic",
+    "highlights": [
+      "First African American president",
+      "Affordable Care Act",
+      "Osama bin Laden raid ordered"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/640px-President_Barack_Obama.jpg"
+  },
+  {
+    "id": "trump",
+    "name": "Donald Trump",
+    "terms": "2017–2021; 2025–",
+    "vicePresidents": "Mike Pence; JD Vance",
+    "party": "Republican",
+    "highlights": [
+      "Businessman and TV personality before office",
+      "Two non-consecutive terms",
+      "Impeached twice in first term"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29_%28cropped%29%282%29.jpg/640px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29_%28cropped%29%282%29.jpg"
+  },
+  {
+    "id": "biden",
+    "name": "Joe Biden",
+    "terms": "2021–2025",
+    "vicePresidents": "Kamala Harris",
+    "party": "Democratic",
+    "highlights": [
+      "Longtime senator and Obama’s VP",
+      "Infrastructure and climate bills",
+      "Withdrew from 2024 reelection race"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/640px-Joe_Biden_presidential_portrait.jpg"
+  }
+]

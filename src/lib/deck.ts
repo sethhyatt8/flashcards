@@ -4,6 +4,7 @@ import type {
   FlashcardSetId,
   MonarchCard,
   MonarchPrompt,
+  PresidentCard,
   StudyCard,
   StudyOptions,
 } from '../types'
@@ -53,6 +54,18 @@ export function buildDeck(
           kind: 'monarch-dual',
           payload: card,
           prompt,
+        })
+      }
+    }
+
+    if (set.kind === 'president-fact') {
+      for (const card of set.cards as PresidentCard[]) {
+        deck.push({
+          key: `${set.id}:${card.id}`,
+          setId: set.id as FlashcardSetId,
+          setTitle: set.title,
+          kind: 'president-fact',
+          payload: card,
         })
       }
     }

@@ -2,6 +2,7 @@ import { useEffect, useState, type KeyboardEvent } from 'react'
 import { formatPopulation } from '../lib/deck'
 import type { StudyCard } from '../types'
 import { MonarchBack, MonarchFront } from './MonarchFaces'
+import { PresidentBack, PresidentFront } from './PresidentFaces'
 import { RegionMap } from './RegionMap'
 
 type StudySessionProps = {
@@ -138,6 +139,9 @@ export function StudySession({ deck, onExit, onRestart }: StudySessionProps) {
                 {card.kind === 'monarch-dual' && (
                   <MonarchFront card={card.payload} prompt={card.prompt} />
                 )}
+                {card.kind === 'president-fact' && (
+                  <PresidentFront card={card.payload} />
+                )}
               </div>
               <div className="face face-back">
                 {card.kind === 'flag-fact' && (
@@ -158,6 +162,9 @@ export function StudySession({ deck, onExit, onRestart }: StudySessionProps) {
                 )}
                 {card.kind === 'monarch-dual' && (
                   <MonarchBack card={card.payload} prompt={card.prompt} />
+                )}
+                {card.kind === 'president-fact' && (
+                  <PresidentBack card={card.payload} />
                 )}
               </div>
             </div>

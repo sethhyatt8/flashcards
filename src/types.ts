@@ -20,11 +20,21 @@ export type MonarchCard = {
   image: string
 }
 
+export type PresidentCard = {
+  id: string
+  name: string
+  terms: string
+  vicePresidents: string
+  party: string
+  highlights: string[]
+  image: string
+}
+
 export type MonarchPrompt = 'name' | 'reign'
 
-export type FlashcardSetId = 'world-flags' | 'uk-monarchs'
+export type FlashcardSetId = 'world-flags' | 'uk-monarchs' | 'us-presidents'
 
-export type FlashcardSetKind = 'flag-fact' | 'monarch-dual'
+export type FlashcardSetKind = 'flag-fact' | 'monarch-dual' | 'president-fact'
 
 export type FlashcardSet<T = unknown> = {
   id: FlashcardSetId
@@ -54,4 +64,11 @@ export type StudyCard =
       kind: 'monarch-dual'
       payload: MonarchCard
       prompt: MonarchPrompt
+    }
+  | {
+      key: string
+      setId: FlashcardSetId
+      setTitle: string
+      kind: 'president-fact'
+      payload: PresidentCard
     }

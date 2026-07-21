@@ -1,6 +1,13 @@
 import ukMonarchs from '../data/uk-monarchs.json'
+import usPresidents from '../data/us-presidents.json'
 import worldFlags from '../data/world-flags.json'
-import type { FlagCard, FlashcardSet, FlashcardSetId, MonarchCard } from '../types'
+import type {
+  FlagCard,
+  FlashcardSet,
+  FlashcardSetId,
+  MonarchCard,
+  PresidentCard,
+} from '../types'
 
 export const flashcardSets: FlashcardSet[] = [
   {
@@ -18,6 +25,14 @@ export const flashcardSets: FlashcardSet[] = [
       'From Alfred the Great to Charles III. Study name or reign first; the other side has a portrait and highlights.',
     kind: 'monarch-dual',
     cards: ukMonarchs as MonarchCard[],
+  },
+  {
+    id: 'us-presidents',
+    title: 'US Presidents',
+    description:
+      'Name and portrait on the front. Terms, vice president, party, and a few highlights on the back.',
+    kind: 'president-fact',
+    cards: usPresidents as PresidentCard[],
   },
 ]
 
