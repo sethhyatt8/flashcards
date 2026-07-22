@@ -7,14 +7,16 @@ import type { FlashcardSetId, StudyCard, StudyOptions } from './types'
 import './App.css'
 
 function App() {
-  const [selected, setSelected] = useState<FlashcardSetId[]>(['uk-monarchs'])
+  const [selected, setSelected] = useState<FlashcardSetId[]>(['riichi-mahjong'])
   const [monarchPrompt, setMonarchPrompt] =
     useState<StudyOptions['monarchPrompt']>('mix')
+  const [riichiTermPrompt, setRiichiTermPrompt] =
+    useState<StudyOptions['riichiTermPrompt']>('mix')
   const [deck, setDeck] = useState<StudyCard[] | null>(null)
 
   function start() {
     const sets = getSetsByIds(selected)
-    setDeck(buildDeck(sets, { monarchPrompt }))
+    setDeck(buildDeck(sets, { monarchPrompt, riichiTermPrompt }))
   }
 
   function exit() {
@@ -32,6 +34,8 @@ function App() {
           onChange={setSelected}
           monarchPrompt={monarchPrompt}
           onMonarchPromptChange={setMonarchPrompt}
+          riichiTermPrompt={riichiTermPrompt}
+          onRiichiTermPromptChange={setRiichiTermPrompt}
           onStart={start}
         />
       )}

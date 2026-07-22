@@ -3,6 +3,14 @@ import { formatPopulation } from '../lib/deck'
 import type { StudyCard } from '../types'
 import { MonarchBack, MonarchFront } from './MonarchFaces'
 import { PresidentBack, PresidentFront } from './PresidentFaces'
+import {
+  RiichiGlyphBack,
+  RiichiGlyphFront,
+  RiichiScoreBack,
+  RiichiScoreFront,
+  RiichiTermBack,
+  RiichiTermFront,
+} from './RiichiFaces'
 import { RegionMap } from './RegionMap'
 
 type StudySessionProps = {
@@ -142,6 +150,15 @@ export function StudySession({ deck, onExit, onRestart }: StudySessionProps) {
                 {card.kind === 'president-fact' && (
                   <PresidentFront card={card.payload} />
                 )}
+                {card.kind === 'riichi-term' && (
+                  <RiichiTermFront card={card.payload} prompt={card.prompt} />
+                )}
+                {card.kind === 'riichi-score' && (
+                  <RiichiScoreFront card={card.payload} />
+                )}
+                {card.kind === 'riichi-glyph' && (
+                  <RiichiGlyphFront card={card.payload} />
+                )}
               </div>
               <div className="face face-back">
                 {card.kind === 'flag-fact' && (
@@ -165,6 +182,15 @@ export function StudySession({ deck, onExit, onRestart }: StudySessionProps) {
                 )}
                 {card.kind === 'president-fact' && (
                   <PresidentBack card={card.payload} />
+                )}
+                {card.kind === 'riichi-term' && (
+                  <RiichiTermBack card={card.payload} prompt={card.prompt} />
+                )}
+                {card.kind === 'riichi-score' && (
+                  <RiichiScoreBack card={card.payload} />
+                )}
+                {card.kind === 'riichi-glyph' && (
+                  <RiichiGlyphBack card={card.payload} />
                 )}
               </div>
             </div>

@@ -1,0 +1,983 @@
+[
+  {
+    "kind": "term",
+    "id": "man",
+    "term": "Man",
+    "definition": "The Characters suit, numbered one through nine.",
+    "category": "Suits & Tile Types"
+  },
+  {
+    "kind": "term",
+    "id": "pin",
+    "term": "Pin",
+    "definition": "The Dots or Circles suit, numbered one through nine.",
+    "category": "Suits & Tile Types"
+  },
+  {
+    "kind": "term",
+    "id": "so",
+    "term": "So",
+    "definition": "The Bamboo or Sticks suit, numbered one through nine.",
+    "category": "Suits & Tile Types"
+  },
+  {
+    "kind": "term",
+    "id": "ton",
+    "term": "Ton",
+    "definition": "The East Wind honor tile. Acts as a 1 Han Yaku if it matches your seat or the prevalent wind.",
+    "category": "Suits & Tile Types"
+  },
+  {
+    "kind": "term",
+    "id": "nan",
+    "term": "Nan",
+    "definition": "The South Wind honor tile. Acts as a 1 Han Yaku if it matches your seat or the prevalent wind.",
+    "category": "Suits & Tile Types"
+  },
+  {
+    "kind": "term",
+    "id": "sha",
+    "term": "Sha",
+    "definition": "The West Wind honor tile. Acts as a 1 Han Yaku if it matches your seat or the prevalent wind.",
+    "category": "Suits & Tile Types"
+  },
+  {
+    "kind": "term",
+    "id": "pei",
+    "term": "Pei",
+    "definition": "The North Wind honor tile. Acts as a 1 Han Yaku if it matches your seat or the prevalent wind.",
+    "category": "Suits & Tile Types"
+  },
+  {
+    "kind": "term",
+    "id": "haku",
+    "term": "Haku",
+    "definition": "The White Dragon honor tile, usually completely blank. Worth 1 Han as a triplet.",
+    "category": "Suits & Tile Types"
+  },
+  {
+    "kind": "term",
+    "id": "hatsu",
+    "term": "Hatsu",
+    "definition": "The Green Dragon honor tile. Worth 1 Han as a triplet.",
+    "category": "Suits & Tile Types"
+  },
+  {
+    "kind": "term",
+    "id": "chun",
+    "term": "Chun",
+    "definition": "The Red Dragon honor tile. Worth 1 Han as a triplet.",
+    "category": "Suits & Tile Types"
+  },
+  {
+    "kind": "term",
+    "id": "shuntsu",
+    "term": "Shuntsu",
+    "definition": "A sequence of three consecutive numbers in a single suit. Worth 0 Fu.",
+    "category": "Groupings & Meld Types"
+  },
+  {
+    "kind": "term",
+    "id": "koutsu",
+    "term": "Koutsu",
+    "definition": "A triplet consisting of three identical tiles. Worth 2 to 8 Fu depending on if it is open, closed, simple, or terminal.",
+    "category": "Groupings & Meld Types"
+  },
+  {
+    "kind": "term",
+    "id": "kantsu",
+    "term": "Kantsu",
+    "definition": "A quad consisting of four identical tiles. Worth 8 to 32 Fu depending on if it is open, closed, simple, or terminal.",
+    "category": "Groupings & Meld Types"
+  },
+  {
+    "kind": "term",
+    "id": "furo",
+    "term": "Furo",
+    "definition": "Any open meld exposed on the table after calling a tile. Reduces the Han value of many Yaku and invalidates fully closed ones.",
+    "category": "Groupings & Meld Types"
+  },
+  {
+    "kind": "term",
+    "id": "ankou",
+    "term": "Ankou",
+    "definition": "A concealed triplet formed entirely from your own self-drawn tiles. Worth 4 Fu (simples) or 8 Fu (terminals/honors).",
+    "category": "Groupings & Meld Types"
+  },
+  {
+    "kind": "term",
+    "id": "minkou",
+    "term": "Minkou",
+    "definition": "An open triplet completed by calling Pon on a discard. Worth 2 Fu (simples) or 4 Fu (terminals/honors).",
+    "category": "Groupings & Meld Types"
+  },
+  {
+    "kind": "term",
+    "id": "iishanten",
+    "term": "Iishanten",
+    "definition": "A hand that is exactly one tile away from reaching Tenpai.",
+    "category": "Strategic States & Waiting Patterns"
+  },
+  {
+    "kind": "term",
+    "id": "ryanmen",
+    "term": "Ryanmen",
+    "definition": "A two-sided open wait for a sequence (e.g., 4-5 waiting for 3 or 6). Worth 0 Fu.",
+    "category": "Strategic States & Waiting Patterns"
+  },
+  {
+    "kind": "term",
+    "id": "kanchan",
+    "term": "Kanchan",
+    "definition": "An inside closed wait for a middle sequence tile (e.g., 4-6 waiting for 5). Worth 2 Fu.",
+    "category": "Strategic States & Waiting Patterns"
+  },
+  {
+    "kind": "term",
+    "id": "penchan",
+    "term": "Penchan",
+    "definition": "An edge wait for a three or seven to finish an end sequence (e.g., 1-2 waiting for 3). Worth 2 Fu.",
+    "category": "Strategic States & Waiting Patterns"
+  },
+  {
+    "kind": "term",
+    "id": "tanki",
+    "term": "Tanki",
+    "definition": "A single-tile wait to complete the required pair of the hand. Worth 2 Fu.",
+    "category": "Strategic States & Waiting Patterns"
+  },
+  {
+    "kind": "term",
+    "id": "shanpon",
+    "term": "Shanpon",
+    "definition": "A dual pair wait where drawing a match for either creates a triplet. Worth 0 Fu for the wait itself, but the completing tile scores Fu as a triplet.",
+    "category": "Strategic States & Waiting Patterns"
+  },
+  {
+    "kind": "term",
+    "id": "suuji",
+    "term": "Suuji",
+    "definition": "Safe-tile defense intervals based on two-sided waits, specifically 1-4-7, 2-5-8, and 3-6-9.",
+    "category": "Strategic States & Waiting Patterns"
+  },
+  {
+    "kind": "term",
+    "id": "anpai",
+    "term": "Anpai",
+    "definition": "General safe tiles that opponents cannot legally call a win on.",
+    "category": "Strategic States & Waiting Patterns"
+  },
+  {
+    "kind": "term",
+    "id": "genbutsu",
+    "term": "Genbutsu",
+    "definition": "Absolutely safe tiles previously discarded by a specific opponent during this hand.",
+    "category": "Strategic States & Waiting Patterns"
+  },
+  {
+    "kind": "term",
+    "id": "pinfu",
+    "term": "Pinfu",
+    "definition": "A completely flat, all-sequence concealed hand with a two-sided wait and no point bonuses. Worth 1 Han. Must be closed.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "tanyao",
+    "term": "Tanyao",
+    "definition": "A hand containing absolutely no terminal numbers or honor tiles. Worth 1 Han. Can be open or closed depending on local rules.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "chitoitsu",
+    "term": "Chitoitsu",
+    "definition": "A unique hand composed entirely of seven distinct pairs. Worth 2 Han. Must be closed and always scores exactly 25 Fu.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "iipeiko",
+    "term": "Iipeiko",
+    "definition": "A concealed hand containing two identical sequences in the same suit. Worth 1 Han. Must be closed.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "ryanpeiko",
+    "term": "Ryanpeiko",
+    "definition": "A concealed hand containing two separate sets of identical sequences. Worth 3 Han. Must be closed.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "sankantsu",
+    "term": "Sankantsu",
+    "definition": "A hand containing three separate declared quad sets. Worth 2 Han. Can be open or closed.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "sanankou",
+    "term": "Sanankou",
+    "definition": "A hand containing three separate completely concealed triplets. Worth 2 Han. Can be open or closed (the other sets can be open).",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "itsutsu",
+    "term": "Itsutsu",
+    "definition": "A straight containing a complete 1 through 9 sequence of a single suit. Worth 2 Han closed, 1 Han open.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "chanta",
+    "term": "Chanta",
+    "definition": "A hand where every meld and the pair contains at least one terminal or honor. Worth 2 Han closed, 1 Han open.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "junchan",
+    "term": "Junchan",
+    "definition": "A hand where every meld and the pair contains at least one terminal number. Worth 3 Han closed, 2 Han open.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "honroutou",
+    "term": "Honroutou",
+    "definition": "A hand consisting entirely of terminal numbers and honor tiles. Worth 2 Han. Stacked with Toitoi or Chitoitsu for a minimum of 4 Han.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "toitoi",
+    "term": "Toitoi",
+    "definition": "A hand composed entirely of triplets or quads with no sequences. Worth 2 Han. Typically open.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "sanshoku-doujun",
+    "term": "Sanshoku Doujun",
+    "definition": "A hand with the exact same sequence across all three suits (e.g., 2-3-4 of Man, Pin, and So). Worth 2 Han closed, 1 Han open.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "sanshoku-doukou",
+    "term": "Sanshoku Doukou",
+    "definition": "A hand with the exact same triplet number across all three suits. Worth 2 Han. Can be open or closed.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "shou-sangen",
+    "term": "Shou Sangen",
+    "definition": "A hand with two dragon triplets and a pair of the third dragon. Worth 2 Han (plus 2 Han from the triplets themselves for 4 Han total).",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "honitsu",
+    "term": "Honitsu",
+    "definition": "A hand made of honor tiles and tiles from only one number suit. Worth 3 Han closed, 2 Han open.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "chinitsu",
+    "term": "Chinitsu",
+    "definition": "A full flush hand made entirely from a single number suit with no honors. Worth 6 Han closed, 5 Han open.",
+    "category": "Standard Scoring Hands (Yaku)"
+  },
+  {
+    "kind": "term",
+    "id": "kazoe-yakuman",
+    "term": "Kazoe Yakuman",
+    "definition": "A hand that reaches 13 or more total Han from standard Yaku and Dora. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "kokushi-musou",
+    "term": "Kokushi Musou",
+    "definition": "Thirteen Orphans, consisting of one of every terminal and honor plus a matching pair. Must be closed. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "suuankou",
+    "term": "Suuankou",
+    "definition": "A hand containing four completely concealed triplets. Must be closed, won via Tsumo (or Ron if waiting on a single pair). Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "daisangen",
+    "term": "Daisangen",
+    "definition": "A hand containing triplets of all three dragon types. Can be open or closed. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "shousuushii",
+    "term": "Shousuushii",
+    "definition": "A hand with three wind triplets and a pair of the fourth wind. Can be open or closed. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "daisuushii",
+    "term": "Daisuushii",
+    "definition": "A hand containing triplets of all four wind types. Can be open or closed. Often scored as a Double Yakuman. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "tsuuiisou",
+    "term": "Tsuuiisou",
+    "definition": "All Honors, a hand consisting entirely of wind and dragon tiles. Can be open or closed. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "chinroutou",
+    "term": "Chinroutou",
+    "definition": "All Terminals, a hand consisting entirely of ones and nines. Can be open or closed. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "ryuuiisou",
+    "term": "Ryuuiisou",
+    "definition": "All Green, a hand made exclusively of green dragons and 2, 3, 4, 6, 8 of bamboo. Can be open or closed. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "chuuren-poutou",
+    "term": "Chuuren Poutou",
+    "definition": "Nine Gates, a specific 1-1-1-2-3-4-5-6-7-8-9-9-9 flush shape of one suit plus any duplicating tile. Must be closed. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "suukantsu",
+    "term": "Suukantsu",
+    "definition": "A rare hand containing four separate declared quad sets. Can be open or closed. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "tenhou",
+    "term": "Tenhou",
+    "definition": "A dealer blessing where the hand is a complete win on the very first draw. Must be closed. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "term",
+    "id": "chihou",
+    "term": "Chihou",
+    "definition": "A non-dealer blessing where the hand is a complete win on the very first self-draw. Must be closed. Maximum payout.",
+    "category": "Limit Scoring Hands (Yakuman)"
+  },
+  {
+    "kind": "score",
+    "id": "score-20-1",
+    "situation": "20 Fu, 1 Han",
+    "answer": "Non-Dealer Tsumo: 400 total. Dealer Tsumo: 600 total.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-20-2",
+    "situation": "20 Fu, 2 Han",
+    "answer": "Non-Dealer Tsumo: 700 total. Dealer Tsumo: 1,500 total.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-20-3",
+    "situation": "20 Fu, 3 Han",
+    "answer": "Non-Dealer Tsumo: 3,900 total. Dealer Tsumo: 3,000 total.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-20-4",
+    "situation": "20 Fu, 4 Han",
+    "answer": "Non-Dealer Tsumo: 7,900 total. Dealer Tsumo: 12,000 total.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-25-2",
+    "situation": "25 Fu, 2 Han",
+    "answer": "Non-Dealer Ron: 1,600. Dealer Ron: 2,400.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-25-3",
+    "situation": "25 Fu, 3 Han",
+    "answer": "Non-Dealer Ron: 3,200. Dealer Ron: 4,800.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-25-4",
+    "situation": "25 Fu, 4 Han",
+    "answer": "Non-Dealer Ron: 6,400. Dealer Ron: 9,600.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-30-1",
+    "situation": "30 Fu, 1 Han",
+    "answer": "Non-Dealer: Ron 1,000 / Tsumo 1,200. Dealer: Ron 1,500 / Tsumo 1,500.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-30-2",
+    "situation": "30 Fu, 2 Han",
+    "answer": "Non-Dealer: Ron 2,000 / Tsumo 2,000. Dealer: Ron 2,900 / Tsumo 3,000.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-30-3",
+    "situation": "30 Fu, 3 Han",
+    "answer": "Non-Dealer: Ron 3,900 / Tsumo 3,900. Dealer: Ron 5,800 / Tsumo 6,000.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-30-4",
+    "situation": "30 Fu, 4 Han",
+    "answer": "Non-Dealer: Ron 7,700 / Tsumo 7,900. Dealer: Ron 11,600 / Tsumo 12,000.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-40-1",
+    "situation": "40 Fu, 1 Han",
+    "answer": "Non-Dealer: Ron 1,300 / Tsumo 1,500. Dealer: Ron 2,000 / Tsumo 2,100.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-40-2",
+    "situation": "40 Fu, 2 Han",
+    "answer": "Non-Dealer: Ron 2,600 / Tsumo 2,700. Dealer: Ron 3,900 / Tsumo 3,900.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-40-3",
+    "situation": "40 Fu, 3 Han",
+    "answer": "Non-Dealer: Ron 5,200 / Tsumo 5,200. Dealer: Ron 7,700 / Tsumo 7,800.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-40-4",
+    "situation": "40 Fu, 4 Han (Mangan)",
+    "answer": "Non-Dealer: 8,000 total. Dealer: 12,000 total.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-5-han",
+    "situation": "Any Fu, 5 Han (Mangan)",
+    "answer": "Non-Dealer: 8,000 total. Dealer: 12,000 total.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-6-7-han",
+    "situation": "Any Fu, 6–7 Han (Haneman)",
+    "answer": "Non-Dealer: 12,000 total. Dealer: 18,000 total.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-8-10-han",
+    "situation": "Any Fu, 8–10 Han (Baiman)",
+    "answer": "Non-Dealer: 16,000 total. Dealer: 24,000 total.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-11-12-han",
+    "situation": "Any Fu, 11–12 Han (Sanbaiman)",
+    "answer": "Non-Dealer: 24,000 total. Dealer: 36,000 total.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "score-13-han",
+    "situation": "Any Fu, 13+ Han (Yakuman)",
+    "answer": "Non-Dealer: 32,000 total. Dealer: 48,000 total.",
+    "category": "Master Scoring Grid"
+  },
+  {
+    "kind": "score",
+    "id": "fu-base-ron-closed",
+    "situation": "Base Fu — Concealed Ron Win",
+    "answer": "30 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-base-open",
+    "situation": "Base Fu — Open Hand Win",
+    "answer": "20 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-base-tsumo",
+    "situation": "Base Fu — Self-Draw / Tsumo Win",
+    "answer": "20 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-chitoitsu",
+    "situation": "Seven Pairs Hand (Chitoitsu)",
+    "answer": "Fixed at exactly 25 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-minkou-simple",
+    "situation": "Open Triplet (Minkou) — Simples (2–8)",
+    "answer": "2 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-minkou-terminal",
+    "situation": "Open Triplet (Minkou) — Terminals / Honors",
+    "answer": "4 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-ankou-simple",
+    "situation": "Closed Triplet (Ankou) — Simples (2–8)",
+    "answer": "4 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-ankou-terminal",
+    "situation": "Closed Triplet (Ankou) — Terminals / Honors",
+    "answer": "8 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-minkan-simple",
+    "situation": "Open Quad (Minkan) — Simples (2–8)",
+    "answer": "8 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-minkan-terminal",
+    "situation": "Open Quad (Minkan) — Terminals / Honors",
+    "answer": "16 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-ankan-simple",
+    "situation": "Closed Quad (Ankan) — Simples (2–8)",
+    "answer": "16 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-ankan-terminal",
+    "situation": "Closed Quad (Ankan) — Terminals / Honors",
+    "answer": "32 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-jantou",
+    "situation": "Value Pair (Jantou) — Dragons, Seat Wind, or Prevalent Wind",
+    "answer": "2 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-kanchan",
+    "situation": "Wait Type — Closed / Middle (Kanchan)",
+    "answer": "2 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-penchan",
+    "situation": "Wait Type — Edge (Penchan)",
+    "answer": "2 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-tanki",
+    "situation": "Wait Type — Single Pair / Eyes (Tanki)",
+    "answer": "2 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-tsumo-win",
+    "situation": "Winning Condition — Tsumo",
+    "answer": "2 Fu (Applies to all non-Pinfu hands)",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "score",
+    "id": "fu-open-pinfu-ron",
+    "situation": "Winning Condition — Open Pinfu Ron",
+    "answer": "2 Fu",
+    "category": "Positive Fu Sources"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-1-trad",
+    "display": "一萬",
+    "font": "serif",
+    "styleLabel": "Traditional",
+    "answer": "1",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-1-simp",
+    "display": "一万",
+    "font": "serif",
+    "styleLabel": "Simplified wan",
+    "answer": "1",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-1-brush",
+    "display": "一萬",
+    "font": "brush",
+    "styleLabel": "Brush",
+    "answer": "1",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-2-trad",
+    "display": "二萬",
+    "font": "serif",
+    "styleLabel": "Traditional",
+    "answer": "2",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-2-simp",
+    "display": "二万",
+    "font": "serif",
+    "styleLabel": "Simplified wan",
+    "answer": "2",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-2-brush",
+    "display": "二萬",
+    "font": "brush",
+    "styleLabel": "Brush",
+    "answer": "2",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-3-trad",
+    "display": "三萬",
+    "font": "serif",
+    "styleLabel": "Traditional",
+    "answer": "3",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-3-simp",
+    "display": "三万",
+    "font": "serif",
+    "styleLabel": "Simplified wan",
+    "answer": "3",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-3-brush",
+    "display": "三萬",
+    "font": "brush",
+    "styleLabel": "Brush",
+    "answer": "3",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-4-trad",
+    "display": "四萬",
+    "font": "serif",
+    "styleLabel": "Traditional",
+    "answer": "4",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-4-simp",
+    "display": "四万",
+    "font": "serif",
+    "styleLabel": "Simplified wan",
+    "answer": "4",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-4-brush",
+    "display": "四萬",
+    "font": "brush",
+    "styleLabel": "Brush",
+    "answer": "4",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-5-trad",
+    "display": "五萬",
+    "font": "serif",
+    "styleLabel": "Traditional",
+    "answer": "5",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-5-simp",
+    "display": "五万",
+    "font": "serif",
+    "styleLabel": "Simplified wan",
+    "answer": "5",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-5-brush",
+    "display": "五萬",
+    "font": "brush",
+    "styleLabel": "Brush",
+    "answer": "5",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-6-trad",
+    "display": "六萬",
+    "font": "serif",
+    "styleLabel": "Traditional",
+    "answer": "6",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-6-simp",
+    "display": "六万",
+    "font": "serif",
+    "styleLabel": "Simplified wan",
+    "answer": "6",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-6-brush",
+    "display": "六萬",
+    "font": "brush",
+    "styleLabel": "Brush",
+    "answer": "6",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-7-trad",
+    "display": "七萬",
+    "font": "serif",
+    "styleLabel": "Traditional",
+    "answer": "7",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-7-simp",
+    "display": "七万",
+    "font": "serif",
+    "styleLabel": "Simplified wan",
+    "answer": "7",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-7-brush",
+    "display": "七萬",
+    "font": "brush",
+    "styleLabel": "Brush",
+    "answer": "7",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-8-trad",
+    "display": "八萬",
+    "font": "serif",
+    "styleLabel": "Traditional",
+    "answer": "8",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-8-simp",
+    "display": "八万",
+    "font": "serif",
+    "styleLabel": "Simplified wan",
+    "answer": "8",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-8-brush",
+    "display": "八萬",
+    "font": "brush",
+    "styleLabel": "Brush",
+    "answer": "8",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-9-trad",
+    "display": "九萬",
+    "font": "serif",
+    "styleLabel": "Traditional",
+    "answer": "9",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-9-simp",
+    "display": "九万",
+    "font": "serif",
+    "styleLabel": "Simplified wan",
+    "answer": "9",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-man-9-brush",
+    "display": "九萬",
+    "font": "brush",
+    "styleLabel": "Brush",
+    "answer": "9",
+    "answerDetail": "Man (Characters)",
+    "category": "Character Tile Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-chun-serif",
+    "display": "中",
+    "font": "serif",
+    "styleLabel": "Serif",
+    "answer": "Red Dragon",
+    "answerDetail": "Chun",
+    "category": "Dragon Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-chun-mincho",
+    "display": "中",
+    "font": "mincho",
+    "styleLabel": "Mincho",
+    "answer": "Red Dragon",
+    "answerDetail": "Chun",
+    "category": "Dragon Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-chun-brush",
+    "display": "中",
+    "font": "brush",
+    "styleLabel": "Brush",
+    "answer": "Red Dragon",
+    "answerDetail": "Chun",
+    "category": "Dragon Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-hatsu-trad",
+    "display": "發",
+    "font": "serif",
+    "styleLabel": "Traditional 發",
+    "answer": "Green Dragon",
+    "answerDetail": "Hatsu",
+    "category": "Dragon Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-hatsu-jp",
+    "display": "発",
+    "font": "serif",
+    "styleLabel": "Japanese 発",
+    "answer": "Green Dragon",
+    "answerDetail": "Hatsu",
+    "category": "Dragon Glyphs"
+  },
+  {
+    "kind": "glyph",
+    "id": "glyph-hatsu-brush",
+    "display": "發",
+    "font": "brush",
+    "styleLabel": "Brush 發",
+    "answer": "Green Dragon",
+    "answerDetail": "Hatsu",
+    "category": "Dragon Glyphs"
+  }
+]

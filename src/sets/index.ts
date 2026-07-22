@@ -1,3 +1,4 @@
+import riichiMahjong from '../data/riichi-mahjong.json'
 import ukMonarchs from '../data/uk-monarchs.json'
 import usPresidents from '../data/us-presidents.json'
 import worldFlags from '../data/world-flags.json'
@@ -7,6 +8,7 @@ import type {
   FlashcardSetId,
   MonarchCard,
   PresidentCard,
+  RiichiCard,
 } from '../types'
 
 export const flashcardSets: FlashcardSet[] = [
@@ -34,6 +36,14 @@ export const flashcardSets: FlashcardSet[] = [
     kind: 'president-fact',
     cards: usPresidents as PresidentCard[],
   },
+  {
+    id: 'riichi-mahjong',
+    title: 'Riichi Mahjong',
+    description:
+      'Terms can show either way. Scoring is situation → answer. Character and dragon glyphs are symbol → meaning (white dragon skipped).',
+    kind: 'riichi-mahjong',
+    cards: riichiMahjong as RiichiCard[],
+  },
 ]
 
 export function getSetsByIds(ids: FlashcardSetId[]): FlashcardSet[] {
@@ -43,4 +53,8 @@ export function getSetsByIds(ids: FlashcardSetId[]): FlashcardSet[] {
 
 export function setNeedsMonarchPrompt(ids: FlashcardSetId[]): boolean {
   return getSetsByIds(ids).some((set) => set.kind === 'monarch-dual')
+}
+
+export function setNeedsRiichiTermPrompt(ids: FlashcardSetId[]): boolean {
+  return getSetsByIds(ids).some((set) => set.kind === 'riichi-mahjong')
 }

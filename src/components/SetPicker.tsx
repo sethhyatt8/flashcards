@@ -1,5 +1,5 @@
 import type { FlashcardSet, FlashcardSetId, StudyOptions } from '../types'
-import { setNeedsMonarchPrompt } from '../sets'
+import { setNeedsMonarchPrompt, setNeedsRiichiTermPrompt } from '../sets'
 
 type SetPickerProps = {
   sets: FlashcardSet[]
@@ -7,6 +7,8 @@ type SetPickerProps = {
   onChange: (ids: FlashcardSetId[]) => void
   monarchPrompt: StudyOptions['monarchPrompt']
   onMonarchPromptChange: (value: StudyOptions['monarchPrompt']) => void
+  riichiTermPrompt: StudyOptions['riichiTermPrompt']
+  onRiichiTermPromptChange: (value: StudyOptions['riichiTermPrompt']) => void
   onStart: () => void
 }
 
@@ -16,11 +18,14 @@ export function SetPicker({
   onChange,
   monarchPrompt,
   onMonarchPromptChange,
+  riichiTermPrompt,
+  onRiichiTermPromptChange,
   onStart,
 }: SetPickerProps) {
   const selectedSet = new Set(selected)
   const canStart = selected.length > 0
   const showMonarchPrompt = setNeedsMonarchPrompt(selected)
+  const showRiichiTermPrompt = setNeedsRiichiTermPrompt(selected)
 
   function toggle(id: FlashcardSetId) {
     if (selectedSet.has(id)) {
@@ -94,6 +99,43 @@ export function SetPicker({
             />
             Reign first
           </label>
+        </fieldset>
+      )}
+
+      {showRiichiTermPrompt && (
+        <fieldset className="prompt-options">
+          <legend>Riichi terms — show first</legend>
+          <label>
+            <input
+              type="radio"
+              name="riichi-term-prompt"
+              checked={riichiTermPrompt === 'mix'}
+              onChange={() => onRiichiTermPromptChange('mix')}
+            />
+            Mix (random each card)
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="riichi-term-prompt"
+              checked={riichiTermPrompt === 'term'}
+              onChange={() => onRiichiTermPromptChange('term')}
+            />
+            Term first
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="riichi-term-prompt"
+              checked={riichiTermPrompt === 'definition'}
+              onChange={() => onRiichiTermPromptChange('definition')}
+            />
+            Definition first
+          </label>
+          <p className="prompt-note">
+            Scoring and glyph cards always show the prompt first (situation or
+            symbol).
+          </p>
         </fieldset>
       )}
 

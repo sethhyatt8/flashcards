@@ -145,6 +145,67 @@
   accent-color: var(--teal);
 }
 
+.prompt-note {
+  margin: 0.15rem 0 0;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  text-align: left;
+}
+
+.text-front,
+.text-back {
+  display: grid;
+  gap: 0.75rem;
+  place-items: center;
+  width: min(100%, 300px);
+  text-align: center;
+  padding: 0.35rem;
+}
+
+.prompt-definition {
+  font-size: clamp(1rem, 2.8vw, 1.15rem);
+  line-height: 1.4;
+  color: var(--ink);
+  font-weight: 500;
+  text-wrap: pretty;
+}
+
+.category-chip {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
+.glyph-front {
+  display: grid;
+  gap: 0.85rem;
+  place-items: center;
+  width: min(100%, 300px);
+  text-align: center;
+}
+
+.glyph-symbol {
+  margin: 0;
+  color: #12263a;
+  font-size: clamp(3.4rem, 12vw, 5.2rem);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.glyph-symbol.font-serif {
+  font-family: 'Noto Serif JP', 'Shippori Mincho', serif;
+}
+
+.glyph-symbol.font-mincho {
+  font-family: 'Shippori Mincho', 'Noto Serif JP', serif;
+}
+
+.glyph-symbol.font-brush {
+  font-family: 'Yuji Syuku', 'Noto Serif JP', serif;
+  font-weight: 400;
+}
+
 .monarch-front {
   display: grid;
   gap: 0.75rem;

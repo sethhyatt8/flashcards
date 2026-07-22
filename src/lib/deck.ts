@@ -5,6 +5,8 @@ import type {
   MonarchCard,
   MonarchPrompt,
   PresidentCard,
+  RiichiCard,
+  RiichiTermPrompt,
   StudyCard,
   StudyOptions,
 } from '../types'
@@ -22,6 +24,13 @@ function pickMonarchPrompt(
   mode: StudyOptions['monarchPrompt'],
 ): MonarchPrompt {
   if (mode === 'mix') return Math.random() < 0.5 ? 'name' : 'reign'
+  return mode
+}
+
+function pickRiichiTermPrompt(
+  mode: StudyOptions['riichiTermPrompt'],
+): RiichiTermPrompt {
+  if (mode === 'mix') return Math.random() < 0.5 ? 'term' : 'definition'
   return mode
 }
 
@@ -67,6 +76,38 @@ export function buildDeck(
           kind: 'president-fact',
           payload: card,
         })
+      }
+    }
+
+    if (set.kind === 'riichi-mahjong') {
+      for (const card of set.cards as RiichiCard[]) {
+        if (card.kind === 'term') {
+          const prompt = pickRiichiTermPrompt(options.riichiTermPrompt)
+          deck.push({
+            key: `${set.id}:${card.id}:${prompt}`,
+            setId: set.id as FlashcardSetId,
+            setTitle: set.title,
+            kind: 'riichi-term',
+            payload: card,
+            prompt,
+          })
+        } else if (card.kind === 'score') {
+          deck.push({
+            key: `${set.id}:${card.id}`,
+            setId: set.id as FlashcardSetId,
+            setTitle: set.title,
+            kind: 'riichi-score',
+            payload: card,
+          })
+        } else {
+          deck.push({
+            key: `${set.id}:${card.id}`,
+            setId: set.id as FlashcardSetId,
+            setTitle: set.title,
+            kind: 'riichi-glyph',
+            payload: card,
+          })
+        }
       }
     }
   }
