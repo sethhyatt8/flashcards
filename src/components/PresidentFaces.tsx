@@ -1,4 +1,5 @@
 import type { PresidentCard } from '../types'
+import { PortraitImage } from './PortraitImage'
 
 type PresidentFacesProps = {
   card: PresidentCard
@@ -8,7 +9,13 @@ export function PresidentFront({ card }: PresidentFacesProps) {
   return (
     <div className="president-front">
       {card.image ? (
-        <img className="president-portrait" src={card.image} alt="" />
+        <PortraitImage
+          folder="presidents"
+          id={card.id}
+          remote={card.image}
+          className="president-portrait"
+          alt=""
+        />
       ) : (
         <div className="president-portrait is-empty">No portrait</div>
       )}

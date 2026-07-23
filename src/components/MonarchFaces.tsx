@@ -1,4 +1,5 @@
 import type { MonarchCard, MonarchPrompt } from '../types'
+import { PortraitImage } from './PortraitImage'
 
 type MonarchFacesProps = {
   card: MonarchCard
@@ -23,7 +24,13 @@ export function MonarchBack({ card, prompt }: MonarchFacesProps) {
   return (
     <div className="monarch-back">
       {card.image ? (
-        <img className="monarch-portrait" src={card.image} alt="" />
+        <PortraitImage
+          folder="monarchs"
+          id={card.id}
+          remote={card.image}
+          className="monarch-portrait"
+          alt=""
+        />
       ) : (
         <div className="monarch-portrait is-empty">No portrait</div>
       )}

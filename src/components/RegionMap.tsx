@@ -1,11 +1,15 @@
-import { geoMercator, geoPath } from 'd3-geo'
+import { geoBounds, geoMercator, geoPath } from 'd3-geo'
 import { useEffect, useMemo, useState } from 'react'
 import { feature } from 'topojson-client'
-import type { FeatureCollection, Geometry, MultiPoint } from 'geojson'
+import type { Feature, FeatureCollection, Geometry, MultiPoint } from 'geojson'
 import type { FlagCard } from '../types'
 
-const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
+// 50m includes microstates missing from 110m (Liechtenstein, Tonga, etc.).
+const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json'
 const ANTARCTICA_ID = '010'
+/** Minimum lon/lat span so tiny countries still fill the map. */
+const MIN_SPAN_DEG = 5
+const PAD_DEG = 1.25
 
 type RegionMapProps = {
   card: FlagCard
@@ -13,7 +17,7 @@ type RegionMapProps = {
   height?: number
 }
 
-/** Tight subregion frames: [[west, south], [east, north]] */
+/** Fallback subregion frames when country geometry is missing. */
 const SUBREGION_FRAMES: Record<string, [[number, number], [number, number]]> = {
   'North America': [
     [-130, 24],
@@ -133,6 +137,68 @@ function boundsAsMultiPoint(
   }
 }
 
+function expandToMinSpan(
+  west: number,
+  south: number,
+  east: number,
+  north: number,
+  minSpan: number,
+): [[number, number], [number, number]] {
+  let w = west
+  let e = east
+  let s = south
+  let n = north
+  if (e - w < minSpan) {
+    const mid = (e + w) / 2
+    w = mid - minSpan / 2
+    e = mid + minSpan / 2
+  }
+  if (n - s < minSpan) {
+    const mid = (n + s) / 2
+    s = mid - minSpan / 2
+    n = mid + minSpan / 2
+  }
+  s = Math.max(-85, s)
+  n = Math.min(85, n)
+  return [
+    [w, s],
+    [e, n],
+  ]
+}
+
+function fitBoundsForCard(
+  card: FlagCard,
+  active: Feature<Geometry> | undefined,
+): [[number, number], [number, number]] | null {
+  if (active) {
+    const [[west, south], [east, north]] = geoBounds(active)
+    return expandToMinSpan(
+      west - PAD_DEG,
+      south - PAD_DEG,
+      east + PAD_DEG,
+      north + PAD_DEG,
+      MIN_SPAN_DEG,
+    )
+  }
+
+  if (
+    Number.isFinite(card.lat) &&
+    Number.isFinite(card.lng) &&
+    !(card.lat === 0 && card.lng === 0)
+  ) {
+    const half = MIN_SPAN_DEG / 2
+    return expandToMinSpan(
+      card.lng - half,
+      card.lat - half,
+      card.lng + half,
+      card.lat + half,
+      MIN_SPAN_DEG,
+    )
+  }
+
+  return SUBREGION_FRAMES[card.subregion] ?? null
+}
+
 let cachedCollection: FeatureCollection<Geometry> | null = null
 let loadPromise: Promise<FeatureCollection<Geometry>> | null = null
 
@@ -165,7 +231,6 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
     cachedCollection,
   )
   const [failed, setFailed] = useState(false)
-  const bounds = SUBREGION_FRAMES[card.subregion] ?? null
 
   useEffect(() => {
     let alive = true
@@ -181,11 +246,16 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
     }
   }, [])
 
-  const paths = useMemo(() => {
-    if (!world || !bounds) return null
+  const rendered = useMemo(() => {
+    if (!world) return null
+
+    const activeFeature = world.features.find(
+      (f) => padId(f.id as string | number) === card.ccn3,
+    )
+    const bounds = fitBoundsForCard(card, activeFeature)
+    if (!bounds) return { paths: [], marker: null as [number, number] | null }
 
     const projection = geoMercator()
-    // MultiPoint fit is reliable; Polygon fit was leaving default world scale.
     projection.fitExtent(
       [
         [6, 6],
@@ -200,14 +270,13 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
 
     const path = geoPath(projection)
 
-    return world.features
+    const paths = world.features
       .map((f) => {
         const id = padId(f.id as string | number)
         if (id === ANTARCTICA_ID) return null
         const d = path(f)
         if (!d) return null
 
-        // Drop shapes whose centroid falls well outside the frame.
         const centroid = path.centroid(f)
         if (
           !Number.isFinite(centroid[0]) ||
@@ -226,17 +295,36 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
         }
       })
       .filter(Boolean) as { id: string; d: string; active: boolean }[]
-  }, [world, card.ccn3, bounds, width, height])
 
-  if (!bounds) {
-    return null
-  }
+    const hasActivePath = paths.some((p) => p.active)
+    let marker: [number, number] | null = null
+    if (
+      !hasActivePath &&
+      Number.isFinite(card.lng) &&
+      Number.isFinite(card.lat)
+    ) {
+      const pt = projection([card.lng, card.lat])
+      if (
+        pt &&
+        Number.isFinite(pt[0]) &&
+        Number.isFinite(pt[1]) &&
+        pt[0] >= 0 &&
+        pt[0] <= width &&
+        pt[1] >= 0 &&
+        pt[1] <= height
+      ) {
+        marker = [pt[0], pt[1]]
+      }
+    }
+
+    return { paths, marker }
+  }, [world, card, width, height])
 
   if (failed) {
     return <div className="region-map is-empty">Map unavailable</div>
   }
 
-  if (!paths) {
+  if (!rendered) {
     return <div className="region-map is-empty">Loading map…</div>
   }
 
@@ -245,7 +333,7 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
       className="region-map"
       viewBox={`0 0 ${width} ${height}`}
       role="img"
-      aria-label={`${card.subregion} map highlighting ${card.name}`}
+      aria-label={`Map highlighting ${card.name}`}
       data-subregion={card.subregion}
     >
       <rect
@@ -255,7 +343,7 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
         height={height}
         className="region-map-sea"
       />
-      {paths.map((item) => (
+      {rendered.paths.map((item) => (
         <path
           key={item.id}
           d={item.d}
@@ -264,6 +352,22 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
           }
         />
       ))}
+      {rendered.marker && (
+        <g className="region-map-marker">
+          <circle
+            cx={rendered.marker[0]}
+            cy={rendered.marker[1]}
+            r={7}
+            className="region-map-marker-outer"
+          />
+          <circle
+            cx={rendered.marker[0]}
+            cy={rendered.marker[1]}
+            r={3.5}
+            className="region-map-marker-inner"
+          />
+        </g>
+      )}
     </svg>
   )
 }

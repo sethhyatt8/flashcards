@@ -51,7 +51,8 @@ const presidents = [
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 function enlarge(src) {
-  return src.replace(/\/(\d+)px-/, '/640px-')
+  // Wikimedia rejects some thumb widths (e.g. 640); 500 is widely available.
+  return src.replace(/\/(\d+)px-/, '/500px-')
 }
 
 async function thumb(wiki) {

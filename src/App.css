@@ -241,9 +241,9 @@
 
 .monarch-portrait {
   width: 100%;
-  height: 140px;
-  object-fit: cover;
-  object-position: center top;
+  height: 160px;
+  object-fit: contain;
+  object-position: center center;
   border-radius: 12px;
   border: 1px solid var(--line);
   background: var(--sand);
@@ -299,9 +299,9 @@
 
 .president-portrait {
   width: 100%;
-  height: 210px;
-  object-fit: cover;
-  object-position: center top;
+  height: 220px;
+  object-fit: contain;
+  object-position: center center;
   border-radius: 12px;
   border: 1px solid var(--line);
   background: var(--sand);
@@ -494,6 +494,19 @@
   fill: var(--teal);
   stroke: #0a4f4c;
   stroke-width: 0.8;
+}
+
+.region-map-marker-outer {
+  fill: var(--teal);
+  stroke: #0a4f4c;
+  stroke-width: 1;
+  opacity: 0.35;
+}
+
+.region-map-marker-inner {
+  fill: var(--teal);
+  stroke: #0a4f4c;
+  stroke-width: 1;
 }
 
 .country {

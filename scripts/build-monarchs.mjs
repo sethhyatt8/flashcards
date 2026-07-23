@@ -72,7 +72,7 @@ async function thumb(wiki) {
   if (!res.ok) return null
   const j = await res.json()
   const src = j.thumbnail?.source || j.originalimage?.source || null
-  return src ? src.replace(/\/(\d+)px-/, '/640px-') : null
+  return src ? src.replace(/\/(\d+)px-/, '/500px-') : null
 }
 
 const out = []

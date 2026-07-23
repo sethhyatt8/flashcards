@@ -20,7 +20,8 @@ const alts = {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 function enlarge(src) {
-  return src.replace(/\/(\d+)px-/, '/640px-')
+  // Wikimedia rejects some thumb widths (e.g. 640); 500 is widely available.
+  return src.replace(/\/(\d+)px-/, '/500px-')
 }
 
 async function getThumb(title) {
@@ -37,7 +38,7 @@ async function getThumb(title) {
   }
 
   const api =
-    'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&piprop=thumbnail&pithumbsize=640&titles=' +
+    'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&piprop=thumbnail&pithumbsize=500&titles=' +
     encodeURIComponent(title)
   res = await fetch(api, {
     headers: { 'Api-User-Agent': 'FlashcardsApp/1.0' },

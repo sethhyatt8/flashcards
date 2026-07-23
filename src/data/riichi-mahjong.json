@@ -184,204 +184,204 @@
   {
     "kind": "term",
     "id": "tanyao",
-    "term": "Tanyao",
-    "definition": "A hand containing absolutely no terminal numbers or honor tiles. Worth 1 Han. Can be open or closed depending on local rules.",
+    "term": "All Simples",
+    "definition": "Tanyao — A hand containing absolutely no terminal numbers or honor tiles. Worth 1 Han. Can be open or closed depending on local rules.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "chitoitsu",
-    "term": "Chitoitsu",
-    "definition": "A unique hand composed entirely of seven distinct pairs. Worth 2 Han. Must be closed and always scores exactly 25 Fu.",
+    "term": "Seven Pairs",
+    "definition": "Chiitoitsu — A unique hand composed entirely of seven distinct pairs. Worth 2 Han. Must be closed and always scores exactly 25 Fu.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "iipeiko",
-    "term": "Iipeiko",
-    "definition": "A concealed hand containing two identical sequences in the same suit. Worth 1 Han. Must be closed.",
+    "term": "Pure Double Sequence",
+    "definition": "Iipeikou — A concealed hand containing two identical sequences in the same suit. Worth 1 Han. Must be closed.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "ryanpeiko",
-    "term": "Ryanpeiko",
-    "definition": "A concealed hand containing two separate sets of identical sequences. Worth 3 Han. Must be closed.",
+    "term": "Twice Pure Double Sequence",
+    "definition": "Ryanpeikou — A concealed hand containing two separate sets of identical sequences. Worth 3 Han. Must be closed.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "sankantsu",
-    "term": "Sankantsu",
-    "definition": "A hand containing three separate declared quad sets. Worth 2 Han. Can be open or closed.",
+    "term": "Three Quads",
+    "definition": "Sankantsu — A hand containing three separate declared quad sets. Worth 2 Han. Can be open or closed.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "sanankou",
-    "term": "Sanankou",
-    "definition": "A hand containing three separate completely concealed triplets. Worth 2 Han. Can be open or closed (the other sets can be open).",
+    "term": "Three Concealed Triplets",
+    "definition": "Sanankou — A hand containing three separate completely concealed triplets. Worth 2 Han. Can be open or closed (the other sets can be open).",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "itsutsu",
-    "term": "Itsutsu",
-    "definition": "A straight containing a complete 1 through 9 sequence of a single suit. Worth 2 Han closed, 1 Han open.",
+    "term": "Pure Straight",
+    "definition": "Ittsu — A straight containing a complete 1 through 9 sequence of a single suit. Worth 2 Han closed, 1 Han open.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "chanta",
-    "term": "Chanta",
-    "definition": "A hand where every meld and the pair contains at least one terminal or honor. Worth 2 Han closed, 1 Han open.",
+    "term": "Outside Hand",
+    "definition": "Chanta — A hand where every meld and the pair contains at least one terminal or honor. Worth 2 Han closed, 1 Han open.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "junchan",
-    "term": "Junchan",
-    "definition": "A hand where every meld and the pair contains at least one terminal number. Worth 3 Han closed, 2 Han open.",
+    "term": "Terminals in All Sets",
+    "definition": "Junchan — A hand where every meld and the pair contains at least one terminal number. Worth 3 Han closed, 2 Han open.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "honroutou",
-    "term": "Honroutou",
-    "definition": "A hand consisting entirely of terminal numbers and honor tiles. Worth 2 Han. Stacked with Toitoi or Chitoitsu for a minimum of 4 Han.",
+    "term": "All Terminals and Honors",
+    "definition": "Honroutou — A hand consisting entirely of terminal numbers and honor tiles. Worth 2 Han. Stacked with Toitoi or Chitoitsu for a minimum of 4 Han.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "toitoi",
-    "term": "Toitoi",
-    "definition": "A hand composed entirely of triplets or quads with no sequences. Worth 2 Han. Typically open.",
+    "term": "All Triplets",
+    "definition": "Toitoi — A hand composed entirely of triplets or quads with no sequences. Worth 2 Han. Typically open.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "sanshoku-doujun",
-    "term": "Sanshoku Doujun",
-    "definition": "A hand with the exact same sequence across all three suits (e.g., 2-3-4 of Man, Pin, and So). Worth 2 Han closed, 1 Han open.",
+    "term": "Mixed Triple Sequence",
+    "definition": "Sanshoku Doujun — A hand with the exact same sequence across all three suits (e.g., 2-3-4 of Man, Pin, and So). Worth 2 Han closed, 1 Han open.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "sanshoku-doukou",
-    "term": "Sanshoku Doukou",
-    "definition": "A hand with the exact same triplet number across all three suits. Worth 2 Han. Can be open or closed.",
+    "term": "Triple Triplets",
+    "definition": "Sanshoku Doukou — A hand with the exact same triplet number across all three suits. Worth 2 Han. Can be open or closed.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "shou-sangen",
-    "term": "Shou Sangen",
-    "definition": "A hand with two dragon triplets and a pair of the third dragon. Worth 2 Han (plus 2 Han from the triplets themselves for 4 Han total).",
+    "term": "Little Three Dragons",
+    "definition": "Shousangen — A hand with two dragon triplets and a pair of the third dragon. Worth 2 Han (plus 2 Han from the triplets themselves for 4 Han total).",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "honitsu",
-    "term": "Honitsu",
-    "definition": "A hand made of honor tiles and tiles from only one number suit. Worth 3 Han closed, 2 Han open.",
+    "term": "Half Flush",
+    "definition": "Honitsu — A hand made of honor tiles and tiles from only one number suit. Worth 3 Han closed, 2 Han open.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "chinitsu",
-    "term": "Chinitsu",
-    "definition": "A full flush hand made entirely from a single number suit with no honors. Worth 6 Han closed, 5 Han open.",
+    "term": "Full Flush",
+    "definition": "Chinitsu — A full flush hand made entirely from a single number suit with no honors. Worth 6 Han closed, 5 Han open.",
     "category": "Standard Scoring Hands (Yaku)"
   },
   {
     "kind": "term",
     "id": "kazoe-yakuman",
-    "term": "Kazoe Yakuman",
-    "definition": "A hand that reaches 13 or more total Han from standard Yaku and Dora. Maximum payout.",
+    "term": "Counted Yakuman",
+    "definition": "Kazoe Yakuman — A hand that reaches 13 or more total Han from standard Yaku and Dora. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "kokushi-musou",
-    "term": "Kokushi Musou",
-    "definition": "Thirteen Orphans, consisting of one of every terminal and honor plus a matching pair. Must be closed. Maximum payout.",
+    "term": "Thirteen Orphans",
+    "definition": "Kokushi Musou — Thirteen orphans: one of every terminal and honor plus a matching pair. Must be closed. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "suuankou",
-    "term": "Suuankou",
-    "definition": "A hand containing four completely concealed triplets. Must be closed, won via Tsumo (or Ron if waiting on a single pair). Maximum payout.",
+    "term": "Four Concealed Triplets",
+    "definition": "Suuankou — A hand containing four completely concealed triplets. Must be closed, won via Tsumo (or Ron if waiting on a single pair). Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "daisangen",
-    "term": "Daisangen",
-    "definition": "A hand containing triplets of all three dragon types. Can be open or closed. Maximum payout.",
+    "term": "Big Three Dragons",
+    "definition": "Daisangen — A hand containing triplets of all three dragon types. Can be open or closed. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "shousuushii",
-    "term": "Shousuushii",
-    "definition": "A hand with three wind triplets and a pair of the fourth wind. Can be open or closed. Maximum payout.",
+    "term": "Little Four Winds",
+    "definition": "Shousuushii — A hand with three wind triplets and a pair of the fourth wind. Can be open or closed. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "daisuushii",
-    "term": "Daisuushii",
-    "definition": "A hand containing triplets of all four wind types. Can be open or closed. Often scored as a Double Yakuman. Maximum payout.",
+    "term": "Big Four Winds",
+    "definition": "Daisuushii — A hand containing triplets of all four wind types. Can be open or closed. Often scored as a Double Yakuman. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "tsuuiisou",
-    "term": "Tsuuiisou",
-    "definition": "All Honors, a hand consisting entirely of wind and dragon tiles. Can be open or closed. Maximum payout.",
+    "term": "All Honors",
+    "definition": "Tsuuiisou — A hand consisting entirely of wind and dragon tiles. Can be open or closed. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "chinroutou",
-    "term": "Chinroutou",
-    "definition": "All Terminals, a hand consisting entirely of ones and nines. Can be open or closed. Maximum payout.",
+    "term": "All Terminals",
+    "definition": "Chinroutou — A hand consisting entirely of ones and nines. Can be open or closed. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "ryuuiisou",
-    "term": "Ryuuiisou",
-    "definition": "All Green, a hand made exclusively of green dragons and 2, 3, 4, 6, 8 of bamboo. Can be open or closed. Maximum payout.",
+    "term": "All Green",
+    "definition": "Ryuuiisou — A hand made exclusively of green dragons and 2, 3, 4, 6, 8 of bamboo. Can be open or closed. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "chuuren-poutou",
-    "term": "Chuuren Poutou",
-    "definition": "Nine Gates, a specific 1-1-1-2-3-4-5-6-7-8-9-9-9 flush shape of one suit plus any duplicating tile. Must be closed. Maximum payout.",
+    "term": "Nine Gates",
+    "definition": "Chuuren Poutou — A specific 1-1-1-2-3-4-5-6-7-8-9-9-9 flush shape of one suit plus any duplicating tile. Must be closed. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "suukantsu",
-    "term": "Suukantsu",
-    "definition": "A rare hand containing four separate declared quad sets. Can be open or closed. Maximum payout.",
+    "term": "Four Quads",
+    "definition": "Suukantsu — A rare hand containing four separate declared quad sets. Can be open or closed. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "tenhou",
-    "term": "Tenhou",
-    "definition": "A dealer blessing where the hand is a complete win on the very first draw. Must be closed. Maximum payout.",
+    "term": "Blessing of Heaven",
+    "definition": "Tenhou — A dealer blessing where the hand is a complete win on the very first draw. Must be closed. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
     "kind": "term",
     "id": "chihou",
-    "term": "Chihou",
-    "definition": "A non-dealer blessing where the hand is a complete win on the very first self-draw. Must be closed. Maximum payout.",
+    "term": "Blessing of Earth",
+    "definition": "Chihou — A non-dealer blessing where the hand is a complete win on the very first self-draw. Must be closed. Maximum payout.",
     "category": "Limit Scoring Hands (Yakuman)"
   },
   {
