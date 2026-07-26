@@ -7,9 +7,12 @@ import type { FlagCard } from '../types'
 // 50m includes microstates missing from 110m (Liechtenstein, Tonga, etc.).
 const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json'
 const ANTARCTICA_ID = '010'
-/** Minimum lon/lat span so tiny countries still fill the map. */
-const MIN_SPAN_DEG = 5
-const PAD_DEG = 1.25
+/**
+ * Minimum lon/lat span for tiny countries.
+ * Kept wide enough to show neighbors (not a tight crop of Liechtenstein alone).
+ */
+const MIN_SPAN_DEG = 12
+const PAD_DEG = 2.5
 
 type RegionMapProps = {
   card: FlagCard
