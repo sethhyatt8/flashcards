@@ -388,140 +388,140 @@
     "kind": "score",
     "id": "score-20-1",
     "situation": "20 Fu, 1 Han (rare / penalty)",
-    "answer": "Tsumo only. Non-Dealer: 200/400 (800 total). Dealer: 400 all (1,200 total). No ron value.",
+    "answer": "Tsumo only. Non-Dealer: 800 total. Dealer: 1,200 total. No ron value.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-20-2",
     "situation": "20 Fu, 2 Han",
-    "answer": "Tsumo only (typical closed Pinfu). Non-Dealer: 400/700 (1,500 total). Dealer: 700 all (2,100 total). No ron value.",
+    "answer": "Tsumo only (typical closed Pinfu). Non-Dealer: 1,500 total. Dealer: 2,100 total. No ron value.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-20-3",
     "situation": "20 Fu, 3 Han",
-    "answer": "Tsumo only. Non-Dealer: 700/1,300 (2,700 total). Dealer: 1,300 all (3,900 total). No ron value.",
+    "answer": "Tsumo only. Non-Dealer: 2,700 total. Dealer: 3,900 total. No ron value.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-20-4",
     "situation": "20 Fu, 4 Han",
-    "answer": "Tsumo only. Non-Dealer: 1,300/2,600 (5,200 total). Dealer: 2,600 all (7,800 total). No ron value.",
+    "answer": "Tsumo only. Non-Dealer: 5,200 total. Dealer: 7,800 total. No ron value.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-25-2",
     "situation": "25 Fu, 2 Han",
-    "answer": "Non-Dealer: Ron 1,600 / Tsumo 400/800 (1,600). Dealer: Ron 2,400 / Tsumo 800 all (2,400).",
+    "answer": "Non-Dealer: Ron 1,600 / Tsumo 1,600. Dealer: Ron 2,400 / Tsumo 2,400.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-25-3",
     "situation": "25 Fu, 3 Han",
-    "answer": "Non-Dealer: Ron 3,200 / Tsumo 800/1,600 (3,200). Dealer: Ron 4,800 / Tsumo 1,600 all (4,800).",
+    "answer": "Non-Dealer: Ron 3,200 / Tsumo 3,200. Dealer: Ron 4,800 / Tsumo 4,800.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-25-4",
     "situation": "25 Fu, 4 Han",
-    "answer": "Non-Dealer: Ron 6,400 / Tsumo 1,600/3,200 (6,400). Dealer: Ron 9,600 / Tsumo 3,200 all (9,600).",
+    "answer": "Non-Dealer: Ron 6,400 / Tsumo 6,400. Dealer: Ron 9,600 / Tsumo 9,600.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-30-1",
     "situation": "30 Fu, 1 Han",
-    "answer": "Non-Dealer: Ron 1,000 / Tsumo 300/500 (1,100). Dealer: Ron 1,500 / Tsumo 500 all (1,500).",
+    "answer": "Non-Dealer: Ron 1,000 / Tsumo 1,100. Dealer: Ron 1,500 / Tsumo 1,500.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-30-2",
     "situation": "30 Fu, 2 Han",
-    "answer": "Non-Dealer: Ron 2,000 / Tsumo 500/1,000 (2,000). Dealer: Ron 2,900 / Tsumo 1,000 all (3,000).",
+    "answer": "Non-Dealer: Ron 2,000 / Tsumo 2,000. Dealer: Ron 2,900 / Tsumo 3,000.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-30-3",
     "situation": "30 Fu, 3 Han",
-    "answer": "Non-Dealer: Ron 3,900 / Tsumo 1,000/2,000 (4,000). Dealer: Ron 5,800 / Tsumo 2,000 all (6,000).",
+    "answer": "Non-Dealer: Ron 3,900 / Tsumo 4,000. Dealer: Ron 5,800 / Tsumo 6,000.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-30-4",
     "situation": "30 Fu, 4 Han",
-    "answer": "Non-Dealer: Ron 7,700 / Tsumo 2,000/3,900 (7,900). Dealer: Ron 11,600 / Tsumo 3,900 all (11,700).",
+    "answer": "Non-Dealer: Ron 7,700 / Tsumo 7,900. Dealer: Ron 11,600 / Tsumo 11,700.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-40-1",
     "situation": "40 Fu, 1 Han",
-    "answer": "Non-Dealer: Ron 1,300 / Tsumo 400/700 (1,500). Dealer: Ron 2,000 / Tsumo 700 all (2,100).",
+    "answer": "Non-Dealer: Ron 1,300 / Tsumo 1,500. Dealer: Ron 2,000 / Tsumo 2,100.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-40-2",
     "situation": "40 Fu, 2 Han",
-    "answer": "Non-Dealer: Ron 2,600 / Tsumo 700/1,300 (2,700). Dealer: Ron 3,900 / Tsumo 1,300 all (3,900).",
+    "answer": "Non-Dealer: Ron 2,600 / Tsumo 2,700. Dealer: Ron 3,900 / Tsumo 3,900.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-40-3",
     "situation": "40 Fu, 3 Han",
-    "answer": "Non-Dealer: Ron 5,200 / Tsumo 1,300/2,600 (5,200). Dealer: Ron 7,700 / Tsumo 2,600 all (7,800).",
+    "answer": "Non-Dealer: Ron 5,200 / Tsumo 5,200. Dealer: Ron 7,700 / Tsumo 7,800.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-40-4",
     "situation": "40 Fu, 4 Han (Mangan)",
-    "answer": "Non-Dealer: Ron 8,000 / Tsumo 2,000/4,000 (8,000). Dealer: Ron 12,000 / Tsumo 4,000 all (12,000).",
+    "answer": "Non-Dealer: Ron 8,000 / Tsumo 8,000. Dealer: Ron 12,000 / Tsumo 12,000.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-5-han",
     "situation": "Any Fu, 5 Han (Mangan)",
-    "answer": "Non-Dealer: Ron 8,000 / Tsumo 2,000/4,000 (8,000). Dealer: Ron 12,000 / Tsumo 4,000 all (12,000).",
+    "answer": "Non-Dealer: Ron 8,000 / Tsumo 8,000. Dealer: Ron 12,000 / Tsumo 12,000.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-6-7-han",
     "situation": "Any Fu, 6–7 Han (Haneman)",
-    "answer": "Non-Dealer: Ron 12,000 / Tsumo 3,000/6,000 (12,000). Dealer: Ron 18,000 / Tsumo 6,000 all (18,000).",
+    "answer": "Non-Dealer: Ron 12,000 / Tsumo 12,000. Dealer: Ron 18,000 / Tsumo 18,000.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-8-10-han",
     "situation": "Any Fu, 8–10 Han (Baiman)",
-    "answer": "Non-Dealer: Ron 16,000 / Tsumo 4,000/8,000 (16,000). Dealer: Ron 24,000 / Tsumo 8,000 all (24,000).",
+    "answer": "Non-Dealer: Ron 16,000 / Tsumo 16,000. Dealer: Ron 24,000 / Tsumo 24,000.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-11-12-han",
     "situation": "Any Fu, 11–12 Han (Sanbaiman)",
-    "answer": "Non-Dealer: Ron 24,000 / Tsumo 6,000/12,000 (24,000). Dealer: Ron 36,000 / Tsumo 12,000 all (36,000).",
+    "answer": "Non-Dealer: Ron 24,000 / Tsumo 24,000. Dealer: Ron 36,000 / Tsumo 36,000.",
     "category": "Master Scoring Grid"
   },
   {
     "kind": "score",
     "id": "score-13-han",
     "situation": "Any Fu, 13+ Han (Yakuman)",
-    "answer": "Non-Dealer: Ron 32,000 / Tsumo 8,000/16,000 (32,000). Dealer: Ron 48,000 / Tsumo 16,000 all (48,000).",
+    "answer": "Non-Dealer: Ron 32,000 / Tsumo 32,000. Dealer: Ron 48,000 / Tsumo 48,000.",
     "category": "Master Scoring Grid"
   },
   {
