@@ -125,6 +125,28 @@ function padId(id: string | number | undefined): string {
   return String(id).padStart(3, '0')
 }
 
+/** Natural Earth name for countries without a reliable ISO numeric id in the atlas. */
+const ATLAS_NAME_BY_CARD_ID: Record<string, string> = {
+  xk: 'Kosovo',
+}
+
+function atlasFeatureName(f: Feature<Geometry>): string {
+  const props = f.properties as { name?: string } | null
+  return props?.name?.trim() ?? ''
+}
+
+function isActiveFeature(f: Feature<Geometry>, card: FlagCard): boolean {
+  const ccn3 = card.ccn3?.trim()
+  if (ccn3) {
+    const id = padId(f.id as string | number)
+    // Empty atlas ids must not match an empty/missing ccn3 (that was zooming Kosovo to Somaliland).
+    if (id && id === ccn3) return true
+  }
+  const override = ATLAS_NAME_BY_CARD_ID[card.id]
+  if (override && atlasFeatureName(f) === override) return true
+  return false
+}
+
 function boundsAsMultiPoint(
   bounds: [[number, number], [number, number]],
 ): MultiPoint {
@@ -252,9 +274,7 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
   const rendered = useMemo(() => {
     if (!world) return null
 
-    const activeFeature = world.features.find(
-      (f) => padId(f.id as string | number) === card.ccn3,
-    )
+    const activeFeature = world.features.find((f) => isActiveFeature(f, card))
     const bounds = fitBoundsForCard(card, activeFeature)
     if (!bounds) return { paths: [], marker: null as [number, number] | null }
 
@@ -274,7 +294,7 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
     const path = geoPath(projection)
 
     const paths = world.features
-      .map((f) => {
+      .map((f, index) => {
         const id = padId(f.id as string | number)
         if (id === ANTARCTICA_ID) return null
         const d = path(f)
@@ -291,13 +311,14 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
           return null
         }
 
+        const name = atlasFeatureName(f)
         return {
-          id,
+          key: id || name || `feature-${index}`,
           d,
-          active: id === card.ccn3,
+          active: isActiveFeature(f, card),
         }
       })
-      .filter(Boolean) as { id: string; d: string; active: boolean }[]
+      .filter(Boolean) as { key: string; d: string; active: boolean }[]
 
     const hasActivePath = paths.some((p) => p.active)
     let marker: [number, number] | null = null
@@ -348,7 +369,7 @@ export function RegionMap({ card, width = 320, height = 160 }: RegionMapProps) {
       />
       {rendered.paths.map((item) => (
         <path
-          key={item.id}
+          key={item.key}
           d={item.d}
           className={
             item.active ? 'region-map-land is-active' : 'region-map-land'
