@@ -50,6 +50,61 @@ const presidents = [
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
+function ordinal(n) {
+  const s = ['th', 'st', 'nd', 'rd']
+  const v = n % 100
+  return n + (s[(v - 20) % 10] || s[v] || s[0])
+}
+
+/** Official presidential numbers for unique-person cards. */
+const NUMBERS = {
+  washington: '1st',
+  adams: '2nd',
+  jefferson: '3rd',
+  madison: '4th',
+  monroe: '5th',
+  'jq-adams': '6th',
+  jackson: '7th',
+  'van-buren': '8th',
+  harrison: '9th',
+  tyler: '10th',
+  polk: '11th',
+  taylor: '12th',
+  fillmore: '13th',
+  pierce: '14th',
+  buchanan: '15th',
+  lincoln: '16th',
+  johnson: '17th',
+  grant: '18th',
+  hayes: '19th',
+  garfield: '20th',
+  arthur: '21st',
+  cleveland: '22nd & 24th',
+  'b-harrison': '23rd',
+  mckinley: '25th',
+  't-roosevelt': '26th',
+  taft: '27th',
+  wilson: '28th',
+  harding: '29th',
+  coolidge: '30th',
+  hoover: '31st',
+  fdr: '32nd',
+  truman: '33rd',
+  eisenhower: '34th',
+  kennedy: '35th',
+  lbj: '36th',
+  nixon: '37th',
+  ford: '38th',
+  carter: '39th',
+  reagan: '40th',
+  'hw-bush': '41st',
+  clinton: '42nd',
+  'w-bush': '43rd',
+  obama: '44th',
+  trump: '45th & 47th',
+  biden: '46th',
+}
+
 function enlarge(src) {
   // Wikimedia rejects some thumb widths (e.g. 640); 500 is widely available.
   return src.replace(/\/(\d+)px-/, '/500px-')
@@ -79,6 +134,7 @@ for (const p of presidents) {
   out.push({
     id: p.id,
     name: p.name,
+    number: NUMBERS[p.id] || ordinal(out.length + 1),
     terms: p.terms,
     vicePresidents: p.vicePresidents,
     party: p.party,

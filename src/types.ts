@@ -23,6 +23,8 @@ export type MonarchCard = {
 export type PresidentCard = {
   id: string
   name: string
+  /** Display ordinal, e.g. "16th" or "45th & 47th". */
+  number: string
   terms: string
   vicePresidents: string
   party: string

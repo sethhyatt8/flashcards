@@ -28,6 +28,10 @@ export function PresidentBack({ card }: PresidentFacesProps) {
   return (
     <div className="president-back">
       <div className="fact">
+        <span className="fact-label">President</span>
+        <span className="fact-value">{card.number}</span>
+      </div>
+      <div className="fact">
         <span className="fact-label">Term{card.terms.includes(';') ? 's' : ''}</span>
         <span className="fact-value">{card.terms}</span>
       </div>

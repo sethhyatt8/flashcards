@@ -10,7 +10,8 @@
       "Set many early precedents for the office",
       "Led the Continental Army in the Revolution"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/500px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/500px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+    "number": "1st"
   },
   {
     "id": "adams",
@@ -23,7 +24,8 @@
       "Signed the Alien and Sedition Acts",
       "Father of John Quincy Adams"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/John_Adams_Portrait.jpg/500px-John_Adams_Portrait.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/John_Adams_Portrait.jpg/500px-John_Adams_Portrait.jpg",
+    "number": "2nd"
   },
   {
     "id": "jefferson",
@@ -36,7 +38,8 @@
       "Louisiana Purchase (1803)",
       "Founded the University of Virginia"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg/500px-Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg/500px-Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg",
+    "number": "3rd"
   },
   {
     "id": "madison",
@@ -49,7 +52,8 @@
       "President during the War of 1812",
       "Co-author of The Federalist Papers"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/James_Madison.jpg/500px-James_Madison.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/James_Madison.jpg/500px-James_Madison.jpg",
+    "number": "4th"
   },
   {
     "id": "monroe",
@@ -62,7 +66,8 @@
       "Monroe Doctrine (1823)",
       "Missouri Compromise signed during his term"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/James_Monroe_White_House_portrait_1819_%28cropped%29%282%29.jpg/500px-James_Monroe_White_House_portrait_1819_%28cropped%29%282%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/James_Monroe_White_House_portrait_1819_%28cropped%29%282%29.jpg/500px-James_Monroe_White_House_portrait_1819_%28cropped%29%282%29.jpg",
+    "number": "5th"
   },
   {
     "id": "jq-adams",
@@ -75,7 +80,8 @@
       "Won via House contingent election",
       "Later fought slavery in Congress"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/JQA_Photo_Crop_%28cropped%29.jpg/500px-JQA_Photo_Crop_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/JQA_Photo_Crop_%28cropped%29.jpg/500px-JQA_Photo_Crop_%28cropped%29.jpg",
+    "number": "6th"
   },
   {
     "id": "jackson",
@@ -88,7 +94,8 @@
       "Fought the Bank of the United States",
       "Indian Removal Act era"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Andrew_jackson_head_%28cropped%29.jpg/500px-Andrew_jackson_head_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Andrew_jackson_head_%28cropped%29.jpg/500px-Andrew_jackson_head_%28cropped%29.jpg",
+    "number": "7th"
   },
   {
     "id": "van-buren",
@@ -101,7 +108,8 @@
       "Panic of 1837 dominated his term",
       "Key organizer of the Democratic Party"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Martin_Van_Buren_by_Mathew_Brady_c1855-58-%284%29.jpg/500px-Martin_Van_Buren_by_Mathew_Brady_c1855-58-%284%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Martin_Van_Buren_by_Mathew_Brady_c1855-58-%284%29.jpg/500px-Martin_Van_Buren_by_Mathew_Brady_c1855-58-%284%29.jpg",
+    "number": "8th"
   },
   {
     "id": "harrison",
@@ -114,7 +122,8 @@
       "Died of illness after inauguration",
       "“Tippecanoe and Tyler Too”"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/William_Henry_Harrison_crop.jpg/500px-William_Henry_Harrison_crop.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/William_Henry_Harrison_crop.jpg/500px-William_Henry_Harrison_crop.jpg",
+    "number": "9th"
   },
   {
     "id": "tyler",
@@ -127,7 +136,8 @@
       "Annexation of Texas advanced",
       "Often at odds with Whig leaders"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Tyler%2C_John%2C_by_Healy_%281842%2C_NPG_2019_13%29_%28cropped%29.jpg/500px-Tyler%2C_John%2C_by_Healy_%281842%2C_NPG_2019_13%29_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Tyler%2C_John%2C_by_Healy_%281842%2C_NPG_2019_13%29_%28cropped%29.jpg/500px-Tyler%2C_John%2C_by_Healy_%281842%2C_NPG_2019_13%29_%28cropped%29.jpg",
+    "number": "10th"
   },
   {
     "id": "polk",
@@ -140,7 +150,8 @@
       "Oregon boundary settlement",
       "Achieved an ambitious one-term agenda"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Polk_crop.jpg/500px-Polk_crop.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Polk_crop.jpg/500px-Polk_crop.jpg",
+    "number": "11th"
   },
   {
     "id": "taylor",
@@ -153,7 +164,8 @@
       "Died in office after 16 months",
       "Opposed some Compromise of 1850 terms"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Zachary_Taylor_restored_and_cropped_%283.5x4.5_cropped%29_%282%29.jpg/500px-Zachary_Taylor_restored_and_cropped_%283.5x4.5_cropped%29_%282%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Zachary_Taylor_restored_and_cropped_%283.5x4.5_cropped%29_%282%29.jpg/500px-Zachary_Taylor_restored_and_cropped_%283.5x4.5_cropped%29_%282%29.jpg",
+    "number": "12th"
   },
   {
     "id": "fillmore",
@@ -166,7 +178,8 @@
       "Included the Fugitive Slave Act",
       "Last Whig president"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Millard_Fillmore_Better_Crop_%28cropped%29.jpg/500px-Millard_Fillmore_Better_Crop_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Millard_Fillmore_Better_Crop_%28cropped%29.jpg/500px-Millard_Fillmore_Better_Crop_%28cropped%29.jpg",
+    "number": "13th"
   },
   {
     "id": "pierce",
@@ -179,7 +192,8 @@
       "Gadsden Purchase",
       "Deeply unpopular by term’s end"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Mathew_Brady_-_Franklin_Pierce_-_alternate_crop_%28cropped%29%282%29.jpg/500px-Mathew_Brady_-_Franklin_Pierce_-_alternate_crop_%28cropped%29%282%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Mathew_Brady_-_Franklin_Pierce_-_alternate_crop_%28cropped%29%282%29.jpg/500px-Mathew_Brady_-_Franklin_Pierce_-_alternate_crop_%28cropped%29%282%29.jpg",
+    "number": "14th"
   },
   {
     "id": "buchanan",
@@ -192,7 +206,8 @@
       "Dred Scott decision era",
       "Often ranked among least effective"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/James_Buchanan.jpg/500px-James_Buchanan.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/James_Buchanan.jpg/500px-James_Buchanan.jpg",
+    "number": "15th"
   },
   {
     "id": "lincoln",
@@ -205,7 +220,8 @@
       "Emancipation Proclamation",
       "Assassinated by John Wilkes Booth"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg/500px-Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg/500px-Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg",
+    "number": "16th"
   },
   {
     "id": "johnson",
@@ -218,7 +234,8 @@
       "First president impeached",
       "Clashed with Radical Republicans"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg/500px-Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg/500px-Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg",
+    "number": "17th"
   },
   {
     "id": "grant",
@@ -231,7 +248,8 @@
       "Enforced Reconstruction early on",
       "Administration hit by scandals"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ulysses_S._Grant_1870-1880_%28cropped%29.jpg/500px-Ulysses_S._Grant_1870-1880_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ulysses_S._Grant_1870-1880_%28cropped%29.jpg/500px-Ulysses_S._Grant_1870-1880_%28cropped%29.jpg",
+    "number": "18th"
   },
   {
     "id": "hayes",
@@ -244,7 +262,8 @@
       "Ended Reconstruction",
       "Civil service reform advocate"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/President_Rutherford_Hayes_1870_-_1880_Restored.jpg/500px-President_Rutherford_Hayes_1870_-_1880_Restored.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/President_Rutherford_Hayes_1870_-_1880_Restored.jpg/500px-President_Rutherford_Hayes_1870_-_1880_Restored.jpg",
+    "number": "19th"
   },
   {
     "id": "garfield",
@@ -257,7 +276,8 @@
       "Fought patronage appointments",
       "Second president killed in office"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/James_Abram_Garfield%2C_photo_portrait_seated.jpg/500px-James_Abram_Garfield%2C_photo_portrait_seated.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/James_Abram_Garfield%2C_photo_portrait_seated.jpg/500px-James_Abram_Garfield%2C_photo_portrait_seated.jpg",
+    "number": "20th"
   },
   {
     "id": "arthur",
@@ -270,7 +290,8 @@
       "Modernized the Navy",
       "Surprised reformers by backing reform"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chester_A._Arthur_by_Abraham_Bogardus_%28cropped%29_%282%29.jpg/500px-Chester_A._Arthur_by_Abraham_Bogardus_%28cropped%29_%282%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chester_A._Arthur_by_Abraham_Bogardus_%28cropped%29_%282%29.jpg/500px-Chester_A._Arthur_by_Abraham_Bogardus_%28cropped%29_%282%29.jpg",
+    "number": "21st"
   },
   {
     "id": "cleveland",
@@ -283,7 +304,8 @@
       "Vetoed many bills",
       "Panic of 1893 in second term"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/StephenGroverCleveland.jpg/500px-StephenGroverCleveland.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/StephenGroverCleveland.jpg/500px-StephenGroverCleveland.jpg",
+    "number": "22nd & 24th"
   },
   {
     "id": "b-harrison",
@@ -296,7 +318,8 @@
       "Sherman Antitrust Act",
       "McKinley Tariff era"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pach_Brothers_-_Benjamin_Harrison_%28cropped%29_%28cropped%29.jpg/500px-Pach_Brothers_-_Benjamin_Harrison_%28cropped%29_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pach_Brothers_-_Benjamin_Harrison_%28cropped%29_%28cropped%29.jpg/500px-Pach_Brothers_-_Benjamin_Harrison_%28cropped%29_%28cropped%29.jpg",
+    "number": "23rd"
   },
   {
     "id": "mckinley",
@@ -309,7 +332,8 @@
       "Assassinated in 1901",
       "High protective tariffs"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/McKinley_%28cropped%29.jpg/500px-McKinley_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/McKinley_%28cropped%29.jpg/500px-McKinley_%28cropped%29.jpg",
+    "number": "25th"
   },
   {
     "id": "t-roosevelt",
@@ -322,7 +346,8 @@
       "Square Deal and trust-busting",
       "Panama Canal diplomacy"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Theodore_Roosevelt_by_the_Pach_Bros_%284x5_cropped%29_%282%29.jpg/500px-Theodore_Roosevelt_by_the_Pach_Bros_%284x5_cropped%29_%282%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Theodore_Roosevelt_by_the_Pach_Bros_%284x5_cropped%29_%282%29.jpg/500px-Theodore_Roosevelt_by_the_Pach_Bros_%284x5_cropped%29_%282%29.jpg",
+    "number": "26th"
   },
   {
     "id": "taft",
@@ -335,7 +360,8 @@
       "Dollar Diplomacy",
       "Heavier antitrust record than often remembered"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/William_Howard_Taft_by_Pach_Brothers_%283x4_ropped%29_%28cropped%29.jpg/500px-William_Howard_Taft_by_Pach_Brothers_%283x4_ropped%29_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/William_Howard_Taft_by_Pach_Brothers_%283x4_ropped%29_%28cropped%29.jpg/500px-William_Howard_Taft_by_Pach_Brothers_%283x4_ropped%29_%28cropped%29.jpg",
+    "number": "27th"
   },
   {
     "id": "wilson",
@@ -348,7 +374,8 @@
       "Fourteen Points / League of Nations",
       "Federal Reserve created (1913)"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/President_Woodrow_Wilson_Harris_%26_Ewing_%283x4_cropped_b%29.jpg/500px-President_Woodrow_Wilson_Harris_%26_Ewing_%283x4_cropped_b%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/President_Woodrow_Wilson_Harris_%26_Ewing_%283x4_cropped_b%29.jpg/500px-President_Woodrow_Wilson_Harris_%26_Ewing_%283x4_cropped_b%29.jpg",
+    "number": "28th"
   },
   {
     "id": "harding",
@@ -361,7 +388,8 @@
       "Teapot Dome scandal aftermath",
       "Died in office in 1923"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Warren_G._Harding_1920s_portrait_%283x4_cropped%29_%28cropped%29.jpg/500px-Warren_G._Harding_1920s_portrait_%283x4_cropped%29_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Warren_G._Harding_1920s_portrait_%283x4_cropped%29_%28cropped%29.jpg/500px-Warren_G._Harding_1920s_portrait_%283x4_cropped%29_%28cropped%29.jpg",
+    "number": "29th"
   },
   {
     "id": "coolidge",
@@ -374,7 +402,8 @@
       "Pro-business 1920s prosperity",
       "Succeeded Harding after his death"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/President_Calvin_Coolidge%2C_1924_portrait_photograph_%283x4_cropped_2%29.jpeg/500px-President_Calvin_Coolidge%2C_1924_portrait_photograph_%283x4_cropped_2%29.jpeg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/President_Calvin_Coolidge%2C_1924_portrait_photograph_%283x4_cropped_2%29.jpeg/500px-President_Calvin_Coolidge%2C_1924_portrait_photograph_%283x4_cropped_2%29.jpeg",
+    "number": "30th"
   },
   {
     "id": "hoover",
@@ -387,7 +416,8 @@
       "Early Great Depression years",
       "Former humanitarian and Commerce Secretary"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/President_Hoover_portrait.jpg/500px-President_Hoover_portrait.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/President_Hoover_portrait.jpg/500px-President_Hoover_portrait.jpg",
+    "number": "31st"
   },
   {
     "id": "fdr",
@@ -400,7 +430,8 @@
       "World War II leadership",
       "Only president elected four times"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg/500px-FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg/500px-FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg",
+    "number": "32nd"
   },
   {
     "id": "truman",
@@ -413,7 +444,8 @@
       "Marshall Plan and early Cold War",
       "“The buck stops here”"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/TRUMAN_58-766-06_%28cropped%29.jpg/500px-TRUMAN_58-766-06_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/TRUMAN_58-766-06_%28cropped%29.jpg/500px-TRUMAN_58-766-06_%28cropped%29.jpg",
+    "number": "33rd"
   },
   {
     "id": "eisenhower",
@@ -426,7 +458,8 @@
       "Interstate Highway System",
       "Warned of the “military-industrial complex”"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959_%28cropped%29%283%29.jpg/500px-Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959_%28cropped%29%283%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959_%28cropped%29%283%29.jpg/500px-Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959_%28cropped%29%283%29.jpg",
+    "number": "34th"
   },
   {
     "id": "kennedy",
@@ -439,7 +472,8 @@
       "Space race / Moon goal",
       "Assassinated in Dallas"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/500px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/500px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg",
+    "number": "35th"
   },
   {
     "id": "lbj",
@@ -452,7 +486,8 @@
       "Civil Rights Act of 1964",
       "Vietnam War escalation"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Lyndon_B._Johnson%2C_photo_portrait%2C_color_%283x4_cropped%29%282%29.jpg/960px-Lyndon_B._Johnson%2C_photo_portrait%2C_color_%283x4_cropped%29%282%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Lyndon_B._Johnson%2C_photo_portrait%2C_color_%283x4_cropped%29%282%29.jpg/960px-Lyndon_B._Johnson%2C_photo_portrait%2C_color_%283x4_cropped%29%282%29.jpg",
+    "number": "36th"
   },
   {
     "id": "nixon",
@@ -465,7 +500,8 @@
       "Watergate scandal",
       "Only president to resign"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Richard_Nixon_presidential_portrait_%282%29.jpg/960px-Richard_Nixon_presidential_portrait_%282%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Richard_Nixon_presidential_portrait_%282%29.jpg/960px-Richard_Nixon_presidential_portrait_%282%29.jpg",
+    "number": "37th"
   },
   {
     "id": "ford",
@@ -478,7 +514,8 @@
       "Pardoned Nixon",
       "Succeeded after Nixon’s resignation"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Gerald_Ford_presidential_portrait_%28cropped%29.jpg/500px-Gerald_Ford_presidential_portrait_%28cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Gerald_Ford_presidential_portrait_%28cropped%29.jpg/500px-Gerald_Ford_presidential_portrait_%28cropped%29.jpg",
+    "number": "38th"
   },
   {
     "id": "carter",
@@ -491,7 +528,8 @@
       "Iran hostage crisis",
       "Later Nobel Peace Prize for post-presidency work"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg/960px-Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg/960px-Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg",
+    "number": "39th"
   },
   {
     "id": "reagan",
@@ -504,7 +542,8 @@
       "Survived an assassination attempt",
       "Cold War endgame rhetoric"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Portrait_of_President_Reagan_1981.jpg/500px-Official_Portrait_of_President_Reagan_1981.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Portrait_of_President_Reagan_1981.jpg/500px-Official_Portrait_of_President_Reagan_1981.jpg",
+    "number": "40th"
   },
   {
     "id": "hw-bush",
@@ -517,7 +556,8 @@
       "Fall of the Soviet Union era",
       "“Read my lips” tax pledge fallout"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/George_H._W._Bush_presidential_portrait_%28cropped%29_%282%29.jpg/500px-George_H._W._Bush_presidential_portrait_%28cropped%29_%282%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/George_H._W._Bush_presidential_portrait_%28cropped%29_%282%29.jpg/500px-George_H._W._Bush_presidential_portrait_%28cropped%29_%282%29.jpg",
+    "number": "41st"
   },
   {
     "id": "clinton",
@@ -530,7 +570,8 @@
       "Impeached over perjury/obstruction",
       "NAFTA signed"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Bill_Clinton_%28cropped_4%29.jpg/500px-Bill_Clinton_%28cropped_4%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Bill_Clinton_%28cropped_4%29.jpg/500px-Bill_Clinton_%28cropped_4%29.jpg",
+    "number": "42nd"
   },
   {
     "id": "w-bush",
@@ -543,7 +584,8 @@
       "Wars in Afghanistan and Iraq",
       "Son of George H. W. Bush"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/George-W-Bush_%28cropped_2%29.jpeg/500px-George-W-Bush_%28cropped_2%29.jpeg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/George-W-Bush_%28cropped_2%29.jpeg/500px-George-W-Bush_%28cropped_2%29.jpeg",
+    "number": "43rd"
   },
   {
     "id": "obama",
@@ -556,7 +598,8 @@
       "Affordable Care Act",
       "Osama bin Laden raid ordered"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/500px-President_Barack_Obama.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/500px-President_Barack_Obama.jpg",
+    "number": "44th"
   },
   {
     "id": "trump",
@@ -569,7 +612,8 @@
       "Two non-consecutive terms",
       "Impeached twice in first term"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29_%28cropped%29%282%29.jpg/500px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29_%28cropped%29%282%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29_%28cropped%29%282%29.jpg/500px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29_%28cropped%29%282%29.jpg",
+    "number": "45th & 47th"
   },
   {
     "id": "biden",
@@ -582,6 +626,7 @@
       "Infrastructure and climate bills",
       "Withdrew from 2024 reelection race"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/500px-Joe_Biden_presidential_portrait.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/500px-Joe_Biden_presidential_portrait.jpg",
+    "number": "46th"
   }
 ]
