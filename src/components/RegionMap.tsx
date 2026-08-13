@@ -13,6 +13,34 @@ const ANTARCTICA_ID = '010'
  */
 const MIN_SPAN_DEG = 12
 const PAD_DEG = 2.5
+/** Wider local frame when country geometry crosses the antimeridian. */
+const ANTIMERIDIAN_SPAN_DEG = 28
+
+/**
+ * Manual frames for countries whose Natural Earth bounds wrap the date line
+ * (geoBounds west > east) and would otherwise zoom to nearly the whole world.
+ */
+const CARD_FRAMES: Record<string, [[number, number], [number, number]]> = {
+  // Gilbert Islands / capital area — Line Islands sit across the date line.
+  ki: [
+    [160, -10],
+    [180, 8],
+  ],
+  nz: [
+    [165, -48],
+    [179, -33],
+  ],
+  // Contiguous U.S. (Alaska/Hawaii make atlas bounds wrap the Pacific).
+  us: [
+    [-125, 24],
+    [-66, 50],
+  ],
+  // Mainland + Siberia without wrapping past 180°.
+  ru: [
+    [25, 41],
+    [170, 78],
+  ],
+}
 
 type RegionMapProps = {
   card: FlagCard
@@ -191,19 +219,45 @@ function expandToMinSpan(
   ]
 }
 
+function crossesAntimeridian(west: number, east: number): boolean {
+  return east < west
+}
+
+function frameAroundPoint(
+  lng: number,
+  lat: number,
+  span: number,
+): [[number, number], [number, number]] {
+  const half = span / 2
+  return expandToMinSpan(lng - half, lat - half, lng + half, lat + half, span)
+}
+
 function fitBoundsForCard(
   card: FlagCard,
   active: Feature<Geometry> | undefined,
 ): [[number, number], [number, number]] | null {
+  const manual = CARD_FRAMES[card.id]
+  if (manual) return manual
+
   if (active) {
     const [[west, south], [east, north]] = geoBounds(active)
-    return expandToMinSpan(
-      west - PAD_DEG,
-      south - PAD_DEG,
-      east + PAD_DEG,
-      north + PAD_DEG,
-      MIN_SPAN_DEG,
-    )
+    if (!crossesAntimeridian(west, east)) {
+      return expandToMinSpan(
+        west - PAD_DEG,
+        south - PAD_DEG,
+        east + PAD_DEG,
+        north + PAD_DEG,
+        MIN_SPAN_DEG,
+      )
+    }
+    // Date-line wrap: prefer the card's reported location over broken world-spanning bounds.
+    if (
+      Number.isFinite(card.lat) &&
+      Number.isFinite(card.lng) &&
+      !(card.lat === 0 && card.lng === 0)
+    ) {
+      return frameAroundPoint(card.lng, card.lat, ANTIMERIDIAN_SPAN_DEG)
+    }
   }
 
   if (
@@ -211,14 +265,7 @@ function fitBoundsForCard(
     Number.isFinite(card.lng) &&
     !(card.lat === 0 && card.lng === 0)
   ) {
-    const half = MIN_SPAN_DEG / 2
-    return expandToMinSpan(
-      card.lng - half,
-      card.lat - half,
-      card.lng + half,
-      card.lat + half,
-      MIN_SPAN_DEG,
-    )
+    return frameAroundPoint(card.lng, card.lat, MIN_SPAN_DEG)
   }
 
   return SUBREGION_FRAMES[card.subregion] ?? null
